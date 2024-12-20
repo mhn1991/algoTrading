@@ -10,7 +10,7 @@ lowerTimeFrameList = {"M15": "M5", "M5":"M1", "M1": "S15"}
 tradeList = []
 
 def getChart(timeframe):
-    url = 'https://api-fxpractice.oanda.com/v3/instruments/EUR_USD/candles?price=M&smooth=True&granularity='+ timeframe +'&count=300'  # +str(datetime.now())
+    url = 'https://api-fxpractice.oanda.com/v3/instruments/XAU_USD/candles?price=M&smooth=True&granularity='+ timeframe +'&count=300'  # +str(datetime.now())
     headers = {
         "Content-Type": "application/json",
         "Authorization": "Bearer 5ed1905fbb91438b6b990e9b67913f17-000250e17df04b6db52a166705a75018",
@@ -26,7 +26,7 @@ def getChart(timeframe):
         print('Failed to retrieve data:', response.status_code)
 
 def getChartToDate(timeframe, date):
-    url = 'https://api-fxpractice.oanda.com/v3/instruments/EUR_USD/candles?price=M&smooth=True&granularity=' + timeframe + '&count=300' + '&to='+ str(date)
+    url = 'https://api-fxpractice.oanda.com/v3/instruments/XAU_USD/candles?price=M&smooth=True&granularity=' + timeframe + '&count=300' + '&to='+ str(date)
     headers = {
         "Content-Type": "application/json",
         "Authorization": "Bearer 5ed1905fbb91438b6b990e9b67913f17-000250e17df04b6db52a166705a75018",
@@ -228,11 +228,11 @@ oneMinutedf = BollingerBands(oneMinutedf)
 oneMinutedf = StochasticRSI(oneMinutedf)
 
 marketSimulator(oneMinutedf, "M5")
-print("profit is: {0}\n lost profit is: {1}".format(showTradeProfit()[0]*100000, showTradeProfit()[1]*100000))
+print("profit is: {0}\n lost profit is: {1}".format(showTradeProfit()[0]*10000, showTradeProfit()[1]*10000))
 for trade in tradeList:
-    if trade.isComplete:
-        print("trade time: "+str(trade.exitTime)+" trade entry price: "+str(trade.priceEntry)+" trade exit price: "+str(trade.priceExit)+" trade profit: "+str(trade.profit))
+    print("trade time: "+str(trade.entryTime)+" "+ trade.tradeSide+" trade entry price: "+str(trade.priceEntry)+" trade exit price: "+str(trade.priceExit)+" trade profit: "+str(trade.profit))
 
+tradeList.clear()
 exit(0)
 fiveMinutedf = BollingerBands(fiveMinutedf)
 fiveMinutedf = StochasticRSI(fiveMinutedf)
