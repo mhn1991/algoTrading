@@ -212,6 +212,7 @@ def marketSimulator(chart, timeFrame, startTime=None,limit=None):
                     df = BollingerBands(df)
                     df = StochasticRSI(df)
                     marketSimulator(df, lowerTimeFrameList[timeFrame], row['time'], nextCandleTime)
+                    break
             elif row['time'] == limit:
                 print("we hit the limit")
                 break
