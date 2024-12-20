@@ -10,7 +10,7 @@ lowerTimeFrameList = {"M15": "M5", "M5":"M1", "M1": "S15"}
 tradeList = []
 
 def getChart(timeframe):
-    url = 'https://api-fxpractice.oanda.com/v3/instruments/XAU_USD/candles?price=M&smooth=True&granularity='+ timeframe +'&count=300'  # +str(datetime.now())
+    url = 'https://api-fxpractice.oanda.com/v3/instruments/EUR_USD/candles?price=M&smooth=True&granularity='+ timeframe +'&count=300'
     headers = {
         "Content-Type": "application/json",
         "Authorization": "Bearer 5ed1905fbb91438b6b990e9b67913f17-000250e17df04b6db52a166705a75018",
@@ -26,7 +26,7 @@ def getChart(timeframe):
         print('Failed to retrieve data:', response.status_code)
 
 def getChartToDate(timeframe, date):
-    url = 'https://api-fxpractice.oanda.com/v3/instruments/XAU_USD/candles?price=M&smooth=True&granularity=' + timeframe + '&count=300' + '&to='+ str(date)
+    url = 'https://api-fxpractice.oanda.com/v3/instruments/EUR_USD/candles?price=M&smooth=True&granularity=' + timeframe + '&count=300' + '&to='+ str(date)
     headers = {
         "Content-Type": "application/json",
         "Authorization": "Bearer 5ed1905fbb91438b6b990e9b67913f17-000250e17df04b6db52a166705a75018",
@@ -177,47 +177,49 @@ def showTradeProfit():
 
 def marketSimulator(chart, timeFrame, startTime=None,limit=None):
     try:
-        print("===============================================")
-        print("we are in timeframe: ", timeFrame)
-        print("chart start at: " + str(chart['Time'].iloc[0]) + "chart ends at:" + str(chart['Time'].iloc[len(chart['Time'])-1]))
-        signal_found = False
-        for index, row in chart.iterrows():
-            if startTime is not None:
-                if row['time'] < startTime:
-                    continue
-            print("############################################")
-            print("Time is: "+str(row['Time'])+" timeframe is: "+timeFrame)
-            candle = row['c']
-            if( index + 1 < len(chart) ):
-                nextCandleTime= chart['time'].iloc[index + 1]
-                print("next candle time: ",chart['Time'].iloc[index + 1])
-            upper_band = row['UpperBand']
-            lower_band = row['LowerBand']
-            d = row['%D']
-            k = row['%K']
-            rsi = row['RSI']
-            #print("candle price: " + str(candle)+" RSI: " + str(rsi) + " stochRSI: " + str(k)+ " "+str(d)+" upper bond: " + str(upper_band)+" lower bond: " + str(lower_band))
-            signalType = findSignal(candle, upper_band, lower_band, k, rsi, row['Time'])
-            if signalType == "SELL":
-                print("Time: "+str(row['Time'])+" SELL")
-                signal_found = True
-            elif signalType == "BUY":
-                print("Time: "+str(row['Time'])+" BUY")
-                signal_found = True
-            elif signalType == "PARTIAL" and not signal_found:
-                if lowerTimeFrameList[timeFrame] in lowerTimeFrameList:
-                    print("time is: "+str(row['Time'])+" we are going from timeframe: "+timeFrame+" to timeframe: "+lowerTimeFrameList[timeFrame])
-                    newChart = getChartToDate(lowerTimeFrameList[timeFrame],nextCandleTime)
-                    df = jsonToPandas(newChart)
-                    df = BollingerBands(df)
-                    df = StochasticRSI(df)
-                    marketSimulator(df, lowerTimeFrameList[timeFrame], row['time'], nextCandleTime)
+        with open('log.txt', 'w') as file:
+            file.write("===============================================\n")
+            file.write("we are in timeframe: "+ timeFrame+"\n")
+            file.write("chart start at: " + str(chart['Time'].iloc[0]) + "chart ends at:" + str(chart['Time'].iloc[len(chart['Time'])-1]))
+            print("===============================================")
+            print("we are in timeframe: ", timeFrame)
+            print("chart start at: " + str(chart['Time'].iloc[0]) + "chart ends at:" + str(chart['Time'].iloc[len(chart['Time'])-1]))
+            signal_found = False
+            for index, row in chart.iterrows():
+                if startTime is not None:
+                    if row['time'] < startTime:
+                        continue
+                print("############################################")
+                print("Time is: "+str(row['Time'])+" timeframe is: "+timeFrame)
+                candle = row['c']
+                if( index + 1 < len(chart) ):
+                    nextCandleTime= chart['time'].iloc[index + 1]
+                    print("next candle time: ",chart['Time'].iloc[index + 1])
+                upper_band = row['UpperBand']
+                lower_band = row['LowerBand']
+                d = row['%D']
+                k = row['%K']
+                rsi = row['RSI']
+                print("candle price: " + str(candle)+" RSI: " + str(rsi) + " stochRSI: " + str(k)+ " "+str(d)+" upper bond: " + str(upper_band)+" lower bond: " + str(lower_band))
+                signalType = findSignal(candle, upper_band, lower_band, k, rsi, row['Time'])
+                if signalType == "SELL":
+                    print("Time: "+str(row['Time'])+" SELL")
+                    signal_found = True
+                elif signalType == "BUY":
+                    print("Time: "+str(row['Time'])+" BUY")
+                    signal_found = True
+                elif signalType == "PARTIAL" and not signal_found:
+                    if lowerTimeFrameList[timeFrame] in lowerTimeFrameList:
+                        print("time is: "+str(row['Time'])+" we are going from timeframe: "+timeFrame+" to timeframe: "+lowerTimeFrameList[timeFrame])
+                        newChart = getChartToDate(lowerTimeFrameList[timeFrame],nextCandleTime)
+                        df = jsonToPandas(newChart)
+                        df = BollingerBands(df)
+                        df = StochasticRSI(df)
+                        marketSimulator(df, lowerTimeFrameList[timeFrame], row['time'], nextCandleTime)
+                elif row['time'] == limit:
+                    file.write("we hit the time limit\n")
+                    print("we hit the limit")
                     break
-            elif row['time'] == limit:
-                print("we hit the limit")
-                break
-        print("we are exiting timeframe: ", timeFrame)
-        print("===========================================")
     except KeyError as e:
         print(f"Error: Missing column '{e.args[0]}' in DataFrame.")
 
@@ -229,7 +231,7 @@ oneMinutedf = BollingerBands(oneMinutedf)
 oneMinutedf = StochasticRSI(oneMinutedf)
 
 marketSimulator(oneMinutedf, "M5")
-print("profit is: {0}\n lost profit is: {1}".format(showTradeProfit()[0]*10000, showTradeProfit()[1]*10000))
+print("profit is: {0}\nlost profit is: {1}".format(showTradeProfit()[0]*10000, showTradeProfit()[1]*10000))
 for trade in tradeList:
     print("trade time: "+str(trade.entryTime)+" "+ trade.tradeSide+" trade entry price: "+str(trade.priceEntry)+" trade exit price: "+str(trade.priceExit)+" trade profit: "+str(trade.profit))
 
