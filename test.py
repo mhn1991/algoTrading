@@ -7,6 +7,7 @@ import talib as ta
 from objects.Trade import Trade
 
 lowerTimeFrameList = {"M15": "M5", "M5":"M1", "M1": "S15"}
+tradeList = []
 
 def getChart(timeframe):
     url = 'https://api-fxpractice.oanda.com/v3/instruments/EUR_USD/candles?price=M&smooth=True&granularity='+ timeframe +'&count=300'  # +str(datetime.now())
@@ -132,23 +133,46 @@ def StochasticRSI(df, period=14, smooth_window=3):
 
 
 
-def findSignal(candle, upper_band, lower_band, stochRSIK, rsi):
+def findSignal(candle, upper_band, lower_band, stochRSIK, rsi, entryTime):
+    print("####time is: " + str(entryTime))
     # base case for set up a sell trade
     if candle >= upper_band and stochRSIK == 100.0 and rsi > 70.0:
+        trade = Trade("SELL", candle, entryTime, False)
+        if len(tradeList) > 0:
+            for currentTrade in tradeList:
+                if not currentTrade.isComplete and currentTrade.tradeSide == "BUY":
+                    currentTrade.isComplete = True
+                    currentTrade.priceExit = candle
+                    currentTrade.setProfit()
+        tradeList.append(trade)
         return "SELL"
     #base case for set up a buy trade
     if candle <= lower_band and stochRSIK == 0.0 and rsi < 28.0:
+        trade = Trade("BUY", candle, entryTime, False)
+        if len(tradeList) > 0:
+            for currentTrade in tradeList:
+                if not currentTrade.isComplete and currentTrade.tradeSide == "BUY":
+                    currentTrade.isComplete = True
+                    currentTrade.priceExit = candle
+                    currentTrade.setProfit()
+
+        tradeList.append(trade)
         return "BUY"
 
     # here we satisfied partially so we are going to a smaller time frame
     if (candle >= upper_band and stochRSIK > 85) or (candle <= lower_band and stochRSIK < 15):
         return "PARTIAL"
 
-def innerTime():
-    pass
-
-def setupTrade():
-    pass
+def showTradeProfit():
+    profit = 0
+    lostProfit = 0
+    for trade in tradeList:
+        if trade.isComplete and trade.profit > 0:
+            profit += trade.profit
+        elif trade.isComplete and trade.profit < 0:
+            profit += trade.profit
+            lostProfit += trade.profit
+    return profit, lostProfit
 
 
 def marketSimulator(chart, timeFrame, startTime=None,limit=None):
@@ -173,7 +197,7 @@ def marketSimulator(chart, timeFrame, startTime=None,limit=None):
             k = row['%K']
             rsi = row['RSI']
             #print("candle price: " + str(candle)+" RSI: " + str(rsi) + " stochRSI: " + str(k)+ " "+str(d)+" upper bond: " + str(upper_band)+" lower bond: " + str(lower_band))
-            signalType = findSignal(candle, upper_band, lower_band, k, rsi)
+            signalType = findSignal(candle, upper_band, lower_band, k, rsi, row['Time'])
             if signalType == "SELL":
                 print("Time: "+str(row['Time'])+" SELL")
                 signal_found = True
@@ -198,24 +222,18 @@ def marketSimulator(chart, timeFrame, startTime=None,limit=None):
 
 
 
-oneMinutechart = getChart('M15')
-fiveMinutechart = getChart('M5')
+oneMinutechart = getChart('M5')
 oneMinutedf = jsonToPandas(oneMinutechart)
-fiveMinutedf = jsonToPandas(fiveMinutechart)
-
-
-
-
-
-
 oneMinutedf = BollingerBands(oneMinutedf)
 oneMinutedf = StochasticRSI(oneMinutedf)
 
-marketSimulator(oneMinutedf, "M15")
-print(oneMinutedf['%K'].iloc[15])
+marketSimulator(oneMinutedf, "M5")
+print("profit is: {0}\n lost profit is: {1}".format(showTradeProfit()[0]*100000, showTradeProfit()[1]*100000))
+for trade in tradeList:
+    if trade.isComplete:
+        print("trade time: "+str(trade.exitTime)+" trade entry price: "+str(trade.priceEntry)+" trade exit price: "+str(trade.priceExit)+" trade profit: "+str(trade.profit))
+
 exit(0)
-
-
 fiveMinutedf = BollingerBands(fiveMinutedf)
 fiveMinutedf = StochasticRSI(fiveMinutedf)
 
