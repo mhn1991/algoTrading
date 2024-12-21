@@ -1,16 +1,18 @@
+import threading
+
 import requests
 from pandas import json_normalize
 import pandas as pd
-import matplotlib.pyplot as plt
-import talib as ta
+import numpy as np
 
 from objects.Trade import Trade
 
-lowerTimeFrameList = {"M15": "M5", "M5":"M1", "M1": "S15"}
+instrumentList = ["EUR_USD", "EUR_CAD", "EUR_GBP", "XAU_USD", "XAG_USD"]
+lowerTimeFrameList = {"M15": "M5", "M5":"M1", "M1": "S30", "S30": "S5", "S5": ""}
 tradeList = []
 
-def getChart(timeframe):
-    url = 'https://api-fxpractice.oanda.com/v3/instruments/EUR_USD/candles?price=M&smooth=True&granularity='+ timeframe +'&count=300'
+def getChart(instrument,timeframe):
+    url = 'https://api-fxpractice.oanda.com/v3/instruments/'+instrument+'/candles?price=M&smooth=True&granularity='+ timeframe +'&count=300'
     headers = {
         "Content-Type": "application/json",
         "Authorization": "Bearer 5ed1905fbb91438b6b990e9b67913f17-000250e17df04b6db52a166705a75018",
@@ -25,8 +27,8 @@ def getChart(timeframe):
     else:
         print('Failed to retrieve data:', response.status_code)
 
-def getChartToDate(timeframe, date):
-    url = 'https://api-fxpractice.oanda.com/v3/instruments/EUR_USD/candles?price=M&smooth=True&granularity=' + timeframe + '&count=300' + '&to='+ str(date)
+def getChartToDate(instrument, timeframe, date):
+    url = 'https://api-fxpractice.oanda.com/v3/instruments/'+instrument+'/candles?price=M&smooth=True&granularity=' + timeframe + '&count=1000' + '&to='+ str(date)
     headers = {
         "Content-Type": "application/json",
         "Authorization": "Bearer 5ed1905fbb91438b6b990e9b67913f17-000250e17df04b6db52a166705a75018",
@@ -77,10 +79,10 @@ def BollingerBands(df, window=20, std_dev=2):
     """
 
     df['SMA'] = df['c'].rolling(window=window).mean()
-    df['STD'] = df['c'].rolling(window=window).std()
+    df['STD'] = df['c'].rolling(window=window).std(ddof=0)
 
-    df['UpperBand'] = round(df['SMA'] + (df['STD'] * std_dev), 4)
-    df['LowerBand'] = round(df['SMA'] - (df['STD'] * std_dev), 4)
+    df['UpperBand'] = round(df['SMA'] + (df['STD'] * std_dev), 5)
+    df['LowerBand'] = round(df['SMA'] - (df['STD'] * std_dev), 5)
 
     return df
 
@@ -107,7 +109,7 @@ def RSI(df, period=14):
     RSI = round(100.0 - (100.0 / (1.0 + RS)), 4)
     return RSI
 
-def StochasticRSI(df, period=14, smooth_window=3):
+def StochasticRSI(df, rsi_period = 14, stoch_period = 14, k_period = 3, d_period = 3):
     """
     Calculates the Stochastic RSI for a given DataFrame.
 
@@ -120,50 +122,45 @@ def StochasticRSI(df, period=14, smooth_window=3):
         A pandas DataFrame with the Stochastic RSI values.
     """
 
-    df['RSI'] = RSI(df, period)
+    df['RSI'] = RSI(df, rsi_period)
+    #
+    # # Calculate %K
+    # df['%K'] = round((df['RSI'] - df['RSI'].rolling(window=period).min()) / (
+    #             df['RSI'].rolling(window=period).max() - df['RSI'].rolling(window=period).min()) * 100, 4)
+    #
+    # # Calculate %D (Smooth %K)
+    # df['%D'] = df['%K'].rolling(window=smooth_window).mean()
+
+    # Calculate StochRSI
+    min_rsi = df['RSI'].rolling(window=stoch_period, min_periods=stoch_period).min()
+    max_rsi = df['RSI'].rolling(window=stoch_period, min_periods=stoch_period).max()
+    stoch_rsi = (df['RSI'] - min_rsi) / (max_rsi - min_rsi)
 
     # Calculate %K
-    df['%K'] = round((df['RSI'] - df['RSI'].rolling(window=period).min()) / (
-                df['RSI'].rolling(window=period).max() - df['RSI'].rolling(window=period).min()) * 100, 4)
+    df['%K'] = round(stoch_rsi.rolling(window=k_period, min_periods=k_period).mean(), 4) * 100
 
-    # Calculate %D (Smooth %K)
-    df['%D'] = df['%K'].rolling(window=smooth_window).mean()
+    # Calculate %D
+    df['%D'] = round(df['%K'].rolling(window=d_period, min_periods=d_period).mean(), 4)
 
     return df
 
 
 
-def findSignal(candle, upper_band, lower_band, stochRSIK, rsi, entryTime):
-    print("####time is: " + str(entryTime))
+def findSignal(closePrice,highPrice,lowPrice, upper_band, lower_band, stochRSIK, rsi, entryTime):
     # base case for set up a sell trade
-    if candle >= upper_band and stochRSIK == 100.0 and rsi > 70.0:
-        trade = Trade("SELL", candle, entryTime, False)
-        if len(tradeList) > 0:
-            for currentTrade in tradeList:
-                if not currentTrade.isComplete and currentTrade.tradeSide == "BUY":
-                    currentTrade.isComplete = True
-                    currentTrade.priceExit = candle
-                    currentTrade.setProfit()
-        tradeList.append(trade)
+    if closePrice >= upper_band and stochRSIK == 100.0 and rsi > 75.0:
         return "SELL"
     #base case for set up a buy trade
-    if candle <= lower_band and stochRSIK == 0.0 and rsi < 28.0:
-        trade = Trade("BUY", candle, entryTime, False)
-        if len(tradeList) > 0:
-            for currentTrade in tradeList:
-                if not currentTrade.isComplete and currentTrade.tradeSide == "BUY":
-                    currentTrade.isComplete = True
-                    currentTrade.priceExit = candle
-                    currentTrade.setProfit()
-
-        tradeList.append(trade)
+    if closePrice <= lower_band and stochRSIK == 0.0 and rsi < 25.0:
         return "BUY"
 
     # here we satisfied partially so we are going to a smaller time frame
-    if (candle >= upper_band and stochRSIK > 85) or (candle <= lower_band and stochRSIK < 15):
+    if (highPrice >= upper_band or stochRSIK > 85) or (lowPrice <= lower_band or stochRSIK < 15):
         return "PARTIAL"
 
-def showTradeProfit():
+    return ""
+
+def showTradeProfit(tradeList):
     profit = 0
     lostProfit = 0
     for trade in tradeList:
@@ -175,101 +172,113 @@ def showTradeProfit():
     return profit, lostProfit
 
 
-def marketSimulator(chart, timeFrame, startTime=None,limit=None):
+def marketSimulator(chart, instrument, timeFrame, file, tradeList, startTime=None,limit=None):
     try:
-        with open('log.txt', 'w') as file:
-            file.write("===============================================\n")
-            file.write("we are in timeframe: "+ timeFrame+"\n")
-            file.write("chart start at: " + str(chart['Time'].iloc[0]) + "chart ends at:" + str(chart['Time'].iloc[len(chart['Time'])-1]))
-            print("===============================================")
-            print("we are in timeframe: ", timeFrame)
-            print("chart start at: " + str(chart['Time'].iloc[0]) + "chart ends at:" + str(chart['Time'].iloc[len(chart['Time'])-1]))
-            signal_found = False
-            for index, row in chart.iterrows():
-                if startTime is not None:
-                    if row['time'] < startTime:
-                        continue
-                print("############################################")
-                print("Time is: "+str(row['Time'])+" timeframe is: "+timeFrame)
-                candle = row['c']
-                if( index + 1 < len(chart) ):
-                    nextCandleTime= chart['time'].iloc[index + 1]
-                    print("next candle time: ",chart['Time'].iloc[index + 1])
-                upper_band = row['UpperBand']
-                lower_band = row['LowerBand']
-                d = row['%D']
-                k = row['%K']
-                rsi = row['RSI']
-                print("candle price: " + str(candle)+" RSI: " + str(rsi) + " stochRSI: " + str(k)+ " "+str(d)+" upper bond: " + str(upper_band)+" lower bond: " + str(lower_band))
-                signalType = findSignal(candle, upper_band, lower_band, k, rsi, row['Time'])
-                if signalType == "SELL":
-                    print("Time: "+str(row['Time'])+" SELL")
-                    signal_found = True
-                elif signalType == "BUY":
-                    print("Time: "+str(row['Time'])+" BUY")
-                    signal_found = True
-                elif signalType == "PARTIAL" and not signal_found:
-                    if lowerTimeFrameList[timeFrame] in lowerTimeFrameList:
-                        print("time is: "+str(row['Time'])+" we are going from timeframe: "+timeFrame+" to timeframe: "+lowerTimeFrameList[timeFrame])
-                        newChart = getChartToDate(lowerTimeFrameList[timeFrame],nextCandleTime)
-                        df = jsonToPandas(newChart)
-                        df = BollingerBands(df)
-                        df = StochasticRSI(df)
-                        marketSimulator(df, lowerTimeFrameList[timeFrame], row['time'], nextCandleTime)
-                elif row['time'] == limit:
-                    file.write("we hit the time limit\n")
-                    print("we hit the limit")
-                    break
+        file.write("===============================================\n")
+        file.write("we are in timeframe: "+ timeFrame+"\n")
+        file.write("chart start at: " + str(chart['Time'].iloc[0]) + "chart ends at:" + str(chart['Time'].iloc[len(chart['Time'])-1])+"\n")
+        print("===============================================")
+        print("we are in timeframe: ", timeFrame)
+        print("chart start at: " + str(chart['Time'].iloc[0]) + "chart ends at:" + str(chart['Time'].iloc[len(chart['Time'])-1]))
+        signal_found = False
+        for index, row in chart.iterrows():
+            if startTime is not None:
+                if row['time'] < startTime:
+                    continue
+            print("############################################")
+            print("Time is: "+str(row['Time'])+" timeframe is: "+timeFrame)
+            if row['time'] == 1734685740.0:
+                print("found you")
+            candle = row['c']
+            if( index + 1 < len(chart) ):
+                nextCandleTime= chart['time'].iloc[index + 1]
+                print("next candle time: ",chart['Time'].iloc[index + 1])
+            else:
+                nextCandleTime = row['time']
+            upper_band = row['UpperBand']
+            lower_band = row['LowerBand']
+            d = row['%D']
+            k = row['%K']
+            rsi = row['RSI']
+            file.write("##########################################\n")
+            print("candle price: " + str(candle)+" RSI: " + str(rsi) + " stochRSI: " + str(k)+ " "+str(d)+" upper bond: " + str(upper_band)+" lower bond: " + str(lower_band))
+            file.write("Time is: "+str(row['Time'])+" timeframe is: "+timeFrame+"\n"+ "candle price: " + str(candle)+" RSI: " + str(rsi) + " stochRSI: " + str(k)+ " "+str(d)+" upper bond: " + str(upper_band)+" lower bond: " + str(lower_band)+"\n")
+            signalType = findSignal(row['c'],row['h'],row['l'], upper_band, lower_band, k, rsi, row['Time'])
+            file.write("signal type: "+signalType+"\n")
+            file.write("time in unix: "+str(row['time'])+" signal found: "+str(signal_found)+"\n")
+            if signalType == "SELL":
+                trade = Trade("SELL", row['c'], row['Time'], False)
+                if len(tradeList) > 0:
+                    for currentTrade in tradeList:
+                        if not currentTrade.isComplete and currentTrade.tradeSide == "BUY":
+                            currentTrade.isComplete = True
+                            currentTrade.priceExit = row['c']
+                            currentTrade.setProfit()
+                tradeList.append(trade)
+                file.write("SELL\n")
+                print("Time: "+str(row['Time'])+" SELL")
+                signal_found = True
+            elif signalType == "BUY":
+                trade = Trade("BUY", row['c'], row['Time'], False)
+                if len(tradeList) > 0:
+                    for currentTrade in tradeList:
+                        if not currentTrade.isComplete and currentTrade.tradeSide == "SELL":
+                            currentTrade.isComplete = True
+                            currentTrade.priceExit = row['c']
+                            currentTrade.setProfit()
+
+                tradeList.append(trade)
+                file.write("BUY\n")
+                print("Time: "+str(row['Time'])+" BUY")
+                signal_found = True
+            elif signalType == "PARTIAL" and not signal_found:
+                if lowerTimeFrameList[timeFrame] in lowerTimeFrameList:
+                    file.write("PARTIAL\n")
+                    print("time is: "+str(row['Time'])+" we are going from timeframe: "+timeFrame+" to timeframe: "+lowerTimeFrameList[timeFrame])
+                    newChart = getChartToDate(instrument, lowerTimeFrameList[timeFrame],nextCandleTime)
+                    df = jsonToPandas(newChart)
+                    df = BollingerBands(df)
+                    df = StochasticRSI(df)
+                    marketSimulator(df, instrument,lowerTimeFrameList[timeFrame], file, tradeList, row['time'], nextCandleTime)
+            elif row['time'] == limit:
+                file.write("we hit the time limit\n")
+                print("we hit the limit")
+                break
+        file.write("=====================================\n")
     except KeyError as e:
         print(f"Error: Missing column '{e.args[0]}' in DataFrame.")
 
 
+threads = []
+for instrument in instrumentList:
+    oneMinutechart = getChart(instrument, 'M5')
+    oneMinutedf = jsonToPandas(oneMinutechart)
+    oneMinutedf = BollingerBands(oneMinutedf)
+    oneMinutedf = StochasticRSI(oneMinutedf)
+    tradeList = []
 
-oneMinutechart = getChart('M5')
-oneMinutedf = jsonToPandas(oneMinutechart)
-oneMinutedf = BollingerBands(oneMinutedf)
-oneMinutedf = StochasticRSI(oneMinutedf)
+    with open(instrument + '_log.txt', 'w') as file:
+        # Create the thread and pass the file object
+        thread = threading.Thread(target=marketSimulator, args=(oneMinutedf, instrument, "M5", file, tradeList))
+        threads.append(thread)
+        thread.start()
 
-marketSimulator(oneMinutedf, "M5")
-print("profit is: {0}\nlost profit is: {1}".format(showTradeProfit()[0]*10000, showTradeProfit()[1]*10000))
-for trade in tradeList:
-    print("trade time: "+str(trade.entryTime)+" "+ trade.tradeSide+" trade entry price: "+str(trade.priceEntry)+" trade exit price: "+str(trade.priceExit)+" trade profit: "+str(trade.profit))
+        for thread in threads:
+            thread.join()
 
-tradeList.clear()
-exit(0)
-fiveMinutedf = BollingerBands(fiveMinutedf)
-fiveMinutedf = StochasticRSI(fiveMinutedf)
+        file.write("=====================================\n")
+        for trade in tradeList:
+            file.write("trade time: "+str(trade.entryTime)+" "+ trade.tradeSide+" trade entry price: "+str(trade.priceEntry)+" trade exit price: "+str(trade.priceExit)+" trade profit: "+str(trade.profit)+"\n")
+        file.write("=====================================\n")
+        file.write("profit is: {0}\nlost profit is: {1}\n".format(showTradeProfit(tradeList)[0], showTradeProfit(tradeList)[1]))
+    # print("====================="+instrument+"==================================")
+    # print("profit is: {0}\nlost profit is: {1}".format(showTradeProfit(tradeList)[0], showTradeProfit(tradeList)[1]))
+    # for trade in tradeList:
+    #     print("trade time: "+str(trade.entryTime)+" "+ trade.tradeSide+" trade entry price: "+str(trade.priceEntry)+" trade exit price: "+str(trade.priceExit)+" trade profit: "+str(trade.profit))
+    #
+    # print("=====================================================================")
 
 
-
-
-
-
-plt.figure(figsize=(12, 8))
-
-# Plot the main price chart with Bollinger Bands
-plt.subplot(2, 1, 1)
-plt.plot(oneMinutedf['time'], oneMinutedf['c'], label='Price')
-plt.plot(oneMinutedf['time'], oneMinutedf['UpperBand'], color='red', label='Upper Band')
-plt.plot(oneMinutedf['time'], oneMinutedf['LowerBand'], color='red', label='Lower Band')
-plt.fill_between(oneMinutedf['time'], oneMinutedf['UpperBand'], oneMinutedf['LowerBand'], color='gray', alpha=0.2)
-plt.title('Price Chart with Bollinger Bands')
-plt.ylabel('Price')
-plt.xlabel('Time')
-
-# Plot the Stochastic RSI on a separate subplot
-plt.subplot(2, 1, 2)
-plt.plot(oneMinutedf['time'], oneMinutedf['%K'], color='blue', label='%K')
-plt.plot(oneMinutedf['time'], oneMinutedf['%D'], color='orange', label='%D')
-plt.axhline(80, color='black', linestyle='--')
-plt.axhline(20, color='black', linestyle='--')
-plt.title('Stochastic RSI')
-plt.ylabel('RSI')
-plt.xlabel('Time')
-plt.legend()
-
-plt.tight_layout()
-plt.show()
 
 
 
