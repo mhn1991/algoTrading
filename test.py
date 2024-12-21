@@ -250,27 +250,22 @@ def marketSimulator(chart, instrument, timeFrame, file, tradeList, startTime=Non
 
 
 threads = []
+fileList = []
+
 for instrument in instrumentList:
+    file = open(instrument+"_log.txt", "w")
+    fileList.append(file)
     oneMinutechart = getChart(instrument, 'M5')
     oneMinutedf = jsonToPandas(oneMinutechart)
     oneMinutedf = BollingerBands(oneMinutedf)
     oneMinutedf = StochasticRSI(oneMinutedf)
     tradeList = []
 
-    with open(instrument + '_log.txt', 'w') as file:
         # Create the thread and pass the file object
-        thread = threading.Thread(target=marketSimulator, args=(oneMinutedf, instrument, "M5", file, tradeList))
-        threads.append(thread)
-        thread.start()
+    thread = threading.Thread(target=marketSimulator, args=(oneMinutedf, instrument, "M5", file, tradeList))
+    threads.append(thread)
+    thread.start()
 
-        for thread in threads:
-            thread.join()
-
-        file.write("=====================================\n")
-        for trade in tradeList:
-            file.write("trade time: "+str(trade.entryTime)+" "+ trade.tradeSide+" trade entry price: "+str(trade.priceEntry)+" trade exit price: "+str(trade.priceExit)+" trade profit: "+str(trade.profit)+"\n")
-        file.write("=====================================\n")
-        file.write("profit is: {0}\nlost profit is: {1}\n".format(showTradeProfit(tradeList)[0], showTradeProfit(tradeList)[1]))
     # print("====================="+instrument+"==================================")
     # print("profit is: {0}\nlost profit is: {1}".format(showTradeProfit(tradeList)[0], showTradeProfit(tradeList)[1]))
     # for trade in tradeList:
@@ -279,7 +274,11 @@ for instrument in instrumentList:
     # print("=====================================================================")
 
 
+for thread in threads:
+    thread.join()
 
+for file in fileList:
+    file.close()
 
 
 
