@@ -8,6 +8,10 @@ from Brokers.Oanda.config import Config
 class Instrument:
     def __init__(self, symbol):
         self.symbol = symbol
+        self.setTheURI()
+
+    def setTheURI(self):
+        self.uri = 'instruments/'+self.symbol+'/candles?price=M&smooth=True&count=1000'
 
     def jsonToPandas(self, data):
         df = json_normalize(data['candles'])
@@ -31,9 +35,24 @@ class Instrument:
         client = Client()
         if accountType == "practice":
             config = Config()
-            jsonData = client.get(config.practiceURL, config.headers)
+            uri = config.practiceURL + self.uri + '&granularity=' + timeFrame
+            jsonData = client.get(uri, config.headers)
             return self.jsonToPandas(jsonData)
         elif accountType == "real":
             config = Config()
-            jsonData = client.get(config.tradeURL, config.headers)
+            uri = config.tradeURL + self.uri + '&granularity=' + timeFrame
+            jsonData = client.get(uri, config.headers)
+            return self.jsonToPandas(jsonData)
+
+    def getChartToDate(self, accountType, timeFrame, date):
+        client = Client()
+        if accountType == "practice":
+            config = Config()
+            uri = config.practiceURL + self.uri + '&granularity=' + timeFrame+'&to='+str(date)
+            jsonData = client.get(uri, config.headers)
+            return self.jsonToPandas(jsonData)
+        elif accountType == "real":
+            config = Config()
+            uri = config.tradeURL + self.uri + '&granularity=' + timeFrame + '&to=' + str(date)
+            jsonData = client.get(uri, config.headers)
             return self.jsonToPandas(jsonData)
