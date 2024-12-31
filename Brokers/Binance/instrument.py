@@ -13,8 +13,8 @@ class Instrument:
         df = pd.DataFrame(json, columns=columns)
 
         # Convert 'Open Time' and 'Close Time' to datetime
-        df['Open Time'] = pd.to_datetime(df['Open Time'], unit='ms')
-        df['Close Time'] = pd.to_datetime(df['Close Time'], unit='ms')
+        df['OpenTime'] = pd.to_datetime(df['Open Time'], unit='ms')
+        df['CloseTime'] = pd.to_datetime(df['Close Time'], unit='ms')
 
         # Convert numerical columns to appropriate data types
         for col in ['o', 'h', 'l', 'c', 'Volume', 'Quote Asset Volume',
@@ -25,7 +25,14 @@ class Instrument:
 
     def getChart(self):
         client = Client()
-        uri = "https://api.binance.com/" + "api/v3/klines"+"?symbol=BTCUSDT&interval=5m"
+        uri = "https://api.binance.com/" + "api/v3/klines"+"?symbol=BTCUSDT&interval=1m"
+        jsonData = client.get(uri, {})
+        df = self.jsonToPandas(jsonData)
+        return df
+
+    def getLastKlines(self):
+        client = Client()
+        uri = "https://api.binance.com/" + "api/v3/klines" + "?symbol=BTCUSDT&interval=1m&limit=2"
         jsonData = client.get(uri, {})
         df = self.jsonToPandas(jsonData)
         return df
