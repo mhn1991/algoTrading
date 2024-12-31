@@ -21,9 +21,9 @@ def binanceTest():
         print(lastKlines.iloc[1]['OpenTime'])
         if df.iloc[-1]['Open Time'] != lastKlines.iloc[1]['Open Time']:
             print(lastKlines.iloc[1]['OpenTime'])
-            df = pd.concat([df, lastKlines.iloc[1]], ignore_index=True)
+            df = df._append(lastKlines.iloc[1], ignore_index=True)
             break
-        sleep(10)
+        sleep(5)
 
     print(df)
 if __name__ == "__main__":
