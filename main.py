@@ -2,6 +2,7 @@ from time import sleep
 
 from Brokers.Oanda.instrument import Instrument
 from Brokers.Binance.instrument import Instrument as BinanceInstrument
+from Brokers.Binance.run import run
 from Analysis.Indicators.indicators import *
 import pandas as pd
 
@@ -27,4 +28,4 @@ def binanceTest():
 
     print(df)
 if __name__ == "__main__":
-    binanceTest()
+    run()
