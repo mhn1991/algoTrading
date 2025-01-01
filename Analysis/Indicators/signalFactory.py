@@ -1,5 +1,5 @@
 from objects.Trade import Trade
-
+from Brokers.Binance.run import run
 
 def findSignal(closePrice,highPrice,lowPrice, upper_band, lower_band, stochRSIK, rsi) -> str:
     # base case for set up a sell trade
@@ -20,11 +20,16 @@ def isSignal(signal: str, marketPrice,coinName, timeframe, file, tradeList, star
     if signal == "SELL":
         trade = Trade("SELL", marketPrice, startTime, False)
         closeTrades("Buy", tradeList, marketPrice)
+        tradeList.append(trade)
+        file.write("##########################################\nSELL\n")
+        file.write("we are in timeframe: " + timeframe + "\n")
+        file.write("we are in timeframe: " + timeframe + "\n")
     elif signal == "BUY":
         trade = Trade("BUY", marketPrice, startTime, False)
         closeTrades("Sell", tradeList, marketPrice)
+        tradeList.append(trade)
     elif signal == "PARTIAL":
-        pass
+        run(coinName, timeframe, file, tradeList, startTime, endTime)
 
 
 def closeTrades(signal, tradeList, price):
