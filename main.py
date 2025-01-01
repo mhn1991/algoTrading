@@ -4,7 +4,7 @@ from Brokers.Oanda.instrument import Instrument
 from Brokers.Binance.instrument import Instrument as BinanceInstrument
 from Brokers.Binance.run import run
 from Analysis.Indicators.indicators import *
-import pandas as pd
+
 
 def oandaTest():
     instrument = Instrument('EUR_USD')
@@ -28,4 +28,7 @@ def binanceTest():
 
     print(df)
 if __name__ == "__main__":
-    run()
+    file = open('./files/logs/BTCUSDT.txt', 'w')
+    tradeList = []
+    run("BTCUSDT","5m", file,tradeList)
+    file.close()

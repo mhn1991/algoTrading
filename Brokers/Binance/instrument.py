@@ -2,8 +2,10 @@ from API.REST.client import Client
 import pandas as pd
 
 class Instrument:
-    def __init__(self, symbol):
-        self.symbol = symbol
+    def __init__(self, coinName, timeFrame):
+        self.coinName = coinName
+        self.timeFrame = timeFrame
+        self.client = Client()
 
     def jsonToPandas(self, json):
         columns = ['Open Time', 'o', 'h', 'l', 'c', 'Volume',
@@ -24,15 +26,13 @@ class Instrument:
         return df
 
     def getChart(self):
-        client = Client()
-        uri = "https://api.binance.com/" + "api/v3/klines"+"?symbol=BTCUSDT&interval=1m"
-        jsonData = client.get(uri, {})
+        uri = "https://api.binance.com/" + "api/v3/klines"+"?symbol="+self.coinName+"&interval="+self.timeFrame
+        jsonData = self.client.get(uri, {})
         df = self.jsonToPandas(jsonData)
         return df
 
     def getLastKlines(self):
-        client = Client()
-        uri = "https://api.binance.com/" + "api/v3/klines" + "?symbol=BTCUSDT&interval=1m&limit=2"
-        jsonData = client.get(uri, {})
+        uri = "https://api.binance.com/" + "api/v3/klines" + "?symbol="+self.coinName+"&interval="+self.timeFrame+"&limit=2"
+        jsonData = self.client.get(uri, {})
         df = self.jsonToPandas(jsonData)
         return df
