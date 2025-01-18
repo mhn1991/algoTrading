@@ -86,8 +86,8 @@ def run(coinName, timeframe, file, tradeList, startTime=None, endTime=None):
     print("previous candle time: "+str(df.iloc[-2]['OpenTime'])+"\n"+"current candle time: "+str(df.iloc[-1]['OpenTime']))
     #print(df)
     while True:
-        if not (df.iloc[-1]['Open Time'] < time.time() < df.iloc[-1]['Close Time']):
-            #print("time now:"+str(time.time()))
+        if not (df.iloc[-1]['Open Time'] < time.time()*1000 < df.iloc[-1]['Close Time']):
+            print("time now:"+str(time.time())+ "opentime"+str(df.iloc[-1]['Open Time']))
             instrument = BinanceInstrument(coinName, timeframe)
             df = instrument.getChart()
             df = BollingerBands(df)
