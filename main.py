@@ -28,7 +28,7 @@ def binanceTest():
 
     print(df)
 if __name__ == "__main__":
-    file = open('./files/logs/BTCUSDT.txt', 'w', buffering=1)
+    file = open('files/logs/BTCUSDT_1.txt', 'w', buffering=1)
     tradeList = []
-    run("BTCUSDT","1m", file,tradeList)
+    run("BTCUSDT","5m", file,tradeList)
     file.close()

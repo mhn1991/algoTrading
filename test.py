@@ -144,7 +144,8 @@ def StochasticRSI(df, rsi_period = 14, stoch_period = 14, k_period = 3, d_period
 
     return df
 
-
+def findRSIDivergence():
+    pass
 
 def findSignal(closePrice,highPrice,lowPrice, upper_band, lower_band, stochRSIK, rsi, entryTime):
     # base case for set up a sell trade

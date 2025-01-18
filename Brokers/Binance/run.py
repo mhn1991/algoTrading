@@ -1,3 +1,5 @@
+import time
+
 from Brokers.Binance.instrument import Instrument as BinanceInstrument
 from Analysis.Indicators.indicators import BollingerBands,StochasticRSI
 from time import sleep
@@ -84,8 +86,16 @@ def run(coinName, timeframe, file, tradeList, startTime=None, endTime=None):
     print("previous candle time: "+str(df.iloc[-2]['OpenTime'])+"\n"+"current candle time: "+str(df.iloc[-1]['OpenTime']))
     #print(df)
     while True:
+        if not (df.iloc[-1]['Open Time'] < time.time() < df.iloc[-1]['Close Time']):
+            #print("time now:"+str(time.time()))
+            instrument = BinanceInstrument(coinName, timeframe)
+            df = instrument.getChart()
+            df = BollingerBands(df)
+            df = StochasticRSI(df)
+            newKlineAdded = False
+
         lastKlines = instrument.getLastKlines()
-        if lastKlines.iloc[1]['Close Time'] == endTime:
+        if lastKlines.iloc[1]['Open Time'] == endTime:
             endTimeFormated = datetime.datetime.fromtimestamp(endTime / 1000).strftime('%Y-%m-%d %H:%M:%S')
             file.write("end time: "+endTimeFormated+"\n")
             file.write("we hit the time limit\n")
