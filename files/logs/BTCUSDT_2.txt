@@ -1,0 +1,532 @@
+===============================================
+we are in timeframe: 5m
+previous candle time: 2025-01-20 21:25:00
+current candle time: 2025-01-20 21:30:00
+candle price: 103703.53 RSI: 47.2879 stochRSI: 15.21 upper bond: 104190.59932 lower bond: 103523.60768we are checking for signal from time: 2025-01-20 21:35:00till time: 2025-01-20 21:39:59
+candle price: 103364.55 RSI: 41.4166 stochRSI: 1.8399999999999999 upper bond: 104232.15101 lower bond: 103449.34799we are checking for signal from time: 2025-01-20 21:40:00till time: 2025-01-20 21:44:59
+##########################################
+PARTIAL
+we are in timeframe: 1m
+we are checking for signal from time: 2025-01-20 21:40:00till time: 2025-01-20 21:44:59
+===============================================
+we are in timeframe: 1m
+previous candle time: 2025-01-20 21:39:00
+current candle time: 2025-01-20 21:40:00
+start time: 2025-01-20 21:40:00
+end time: 2025-01-20 21:44:59
+candle price: 103326.8 RSI: 35.9499 stochRSI: 7.049999999999999 upper bond: 104133.12072 lower bond: 103258.48528we are checking for signal from time: 2025-01-20 21:41:00till time: 2025-01-20 21:41:59
+##########################################
+PARTIAL
+we are in timeframe: 1s
+we are checking for signal from time: 2025-01-20 21:41:00till time: 2025-01-20 21:41:59
+===============================================
+we are in timeframe: 1s
+previous candle time: 2025-01-20 21:41:00
+current candle time: 2025-01-20 21:41:01
+start time: 2025-01-20 21:41:00
+end time: 2025-01-20 21:41:59
+candle price: 103327.68 RSI: 48.8639 stochRSI: 99.97 upper bond: 103345.63552 lower bond: 103307.61648candle price: 103338.68 RSI: 58.1372 stochRSI: 100.0 upper bond: 103343.0522 lower bond: 103308.3208candle price: 103338.67 RSI: 58.1266 stochRSI: 99.97 upper bond: 103342.99401 lower bond: 103308.34999candle price: 103331.85 RSI: 48.7692 stochRSI: 78.53 upper bond: 103355.60515 lower bond: 103303.43185candle price: 103321.18 RSI: 43.6155 stochRSI: 11.600000000000001 upper bond: 103355.54811 lower bond: 103302.91089candle price: 103312.14 RSI: 39.7284 stochRSI: 0.0 upper bond: 103356.2352 lower bond: 103300.7338candle price: 103281.43 RSI: 29.0492 stochRSI: 0.0 upper bond: 103364.79507 lower bond: 103285.04293candle price: 103283.5 RSI: 30.5503 stochRSI: 2.13 upper bond: 103367.49137 lower bond: 103273.68563candle price: 103281.43 RSI: 29.8187 stochRSI: 2.39 upper bond: 103367.50438 lower bond: 103259.82662candle price: 103262.2 RSI: 22.5566 stochRSI: 2.71 upper bond: 103361.08934 lower bond: 103247.94266candle price: 103262.21 RSI: 22.568 stochRSI: 0.02 upper bond: 103352.94047 lower bond: 103240.48453candle price: 103271.4 RSI: 32.4036 stochRSI: 93.12 upper bond: 103323.92085 lower bond: 103247.50115candle price: 103271.4 RSI: 32.4092 stochRSI: 99.96000000000001 upper bond: 103307.93464 lower bond: 103252.57836candle price: 103271.41 RSI: 32.4237 stochRSI: 99.98 upper bond: 103289.08083 lower bond: 103260.40817candle price: 103262.36 RSI: 26.4466 stochRSI: 59.64 upper bond: 103288.14695 lower bond: 103257.52805candle price: 103262.37 RSI: 26.4773 stochRSI: 39.6 upper bond: 103283.99446 lower bond: 103255.54754candle price: 103276.04 RSI: 47.5964 stochRSI: 99.97 upper bond: 103280.86592 lower bond: 103257.05908candle price: 103285.75 RSI: 58.8771 stochRSI: 99.97 upper bond: 103282.69559 lower bond: 103257.04441candle price: 103285.44 RSI: 51.4029 stochRSI: 83.83 upper bond: 103303.6017 lower bond: 103247.5983candle price: 103281.93 RSI: 49.0854 stochRSI: 49.91 upper bond: 103305.08403 lower bond: 103248.57197candle price: 103281.93 RSI: 49.0854 stochRSI: 46.7 upper bond: 103306.44968 lower bond: 103250.36432end time: 2025-01-20 21:41:59
+we hit the time limit
+we come out of time frame:1s
+================================================================candle price: 103294.97 RSI: 35.0464 stochRSI: 7.79 upper bond: 104089.79294 lower bond: 103223.31106we are checking for signal from time: 2025-01-20 21:42:00till time: 2025-01-20 21:42:59
+##########################################
+PARTIAL
+we are in timeframe: 1s
+we are checking for signal from time: 2025-01-20 21:42:00till time: 2025-01-20 21:42:59
+===============================================
+we are in timeframe: 1s
+previous candle time: 2025-01-20 21:42:03
+current candle time: 2025-01-20 21:42:04
+start time: 2025-01-20 21:42:00
+end time: 2025-01-20 21:42:59
+candle price: 103341.5 RSI: 75.1889 stochRSI: 100.0 upper bond: 103344.60891 lower bond: 103260.48009candle price: 103376.0 RSI: 82.9578 stochRSI: 100.0 upper bond: 103366.21777 lower bond: 103250.09423candle price: 103389.83 RSI: 79.9283 stochRSI: 86.25 upper bond: 103403.61215 lower bond: 103245.23885candle price: 103425.14 RSI: 85.2603 stochRSI: 92.19000000000001 upper bond: 103437.23437 lower bond: 103251.52163candle price: 103425.14 RSI: 85.2603 stochRSI: 94.87 upper bond: 103452.77897 lower bond: 103264.61903candle price: 103415.29 RSI: 76.3448 stochRSI: 65.67 upper bond: 103465.40852 lower bond: 103288.59748candle price: 103402.02 RSI: 65.6315 stochRSI: 0.0 upper bond: 103457.4213 lower bond: 103326.8097candle price: 103281.94 RSI: 25.3812 stochRSI: 0.01 upper bond: 103466.36333 lower bond: 103319.23867candle price: 103312.75 RSI: 37.2028 stochRSI: 10.68 upper bond: 103481.80832 lower bond: 103289.51468candle price: 103318.66 RSI: 39.4962 stochRSI: 21.77 upper bond: 103482.71592 lower bond: 103266.95508candle price: 103296.81 RSI: 33.9404 stochRSI: 21.310000000000002 upper bond: 103480.63771 lower bond: 103252.02729candle price: 103307.14 RSI: 39.0082 stochRSI: 23.97 upper bond: 103458.36452 lower bond: 103236.94748candle price: 103340.02 RSI: 52.2548 stochRSI: 81.52000000000001 upper bond: 103423.65588 lower bond: 103243.74812candle price: 103336.33 RSI: 50.7879 stochRSI: 95.04 upper bond: 103397.80367 lower bond: 103253.81633candle price: 103308.01 RSI: 40.0099 stochRSI: 53.32 upper bond: 103347.83195 lower bond: 103278.51005candle price: 103303.73 RSI: 39.0847 stochRSI: 27.08 upper bond: 103344.37641 lower bond: 103286.83159candle price: 103331.7 RSI: 52.6694 stochRSI: 67.28 upper bond: 103346.41166 lower bond: 103287.25034candle price: 103339.0 RSI: 54.9264 stochRSI: 96.34 upper bond: 103355.04245 lower bond: 103285.90955candle price: 103340.38 RSI: 55.5256 stochRSI: 91.07 upper bond: 103357.28699 lower bond: 103292.38001candle price: 103320.0 RSI: 44.5906 stochRSI: 54.64 upper bond: 103356.84128 lower bond: 103298.80572end time: 2025-01-20 21:42:59
+we hit the time limit
+we come out of time frame:1s
+================================================================candle price: 103320.01 RSI: 36.4005 stochRSI: 6.619999999999999 upper bond: 104052.31025 lower bond: 103194.13275we are checking for signal from time: 2025-01-20 21:43:00till time: 2025-01-20 21:43:59
+##########################################
+PARTIAL
+we are in timeframe: 1s
+we are checking for signal from time: 2025-01-20 21:43:00till time: 2025-01-20 21:43:59
+===============================================
+we are in timeframe: 1s
+previous candle time: 2025-01-20 21:43:01
+current candle time: 2025-01-20 21:43:02
+start time: 2025-01-20 21:43:00
+end time: 2025-01-20 21:43:59
+candle price: 103328.73 RSI: 51.2939 stochRSI: 27.02 upper bond: 103350.75757 lower bond: 103296.88743candle price: 103341.0 RSI: 58.8123 stochRSI: 81.98 upper bond: 103353.20059 lower bond: 103300.62641candle price: 103365.17 RSI: 70.497 stochRSI: 100.0 upper bond: 103358.03077 lower bond: 103309.64823candle price: 103373.69 RSI: 73.397 stochRSI: 100.0 upper bond: 103371.61715 lower bond: 103305.65585candle price: 103336.8 RSI: 48.8624 stochRSI: 19.21 upper bond: 103371.30366 lower bond: 103305.31034candle price: 103325.73 RSI: 43.1416 stochRSI: 9.55 upper bond: 103370.79998 lower bond: 103303.99202candle price: 103346.57 RSI: 52.3089 stochRSI: 43.37 upper bond: 103375.46569 lower bond: 103307.85831candle price: 103325.76 RSI: 43.8173 stochRSI: 13.819999999999999 upper bond: 103375.18467 lower bond: 103316.17833candle price: 103306.83 RSI: 37.3907 stochRSI: 0.0 upper bond: 103379.57625 lower bond: 103305.27775candle price: 103300.17 RSI: 35.3075 stochRSI: 0.01 upper bond: 103383.08147 lower bond: 103293.18153candle price: 103288.62 RSI: 35.4408 stochRSI: 7.9399999999999995 upper bond: 103375.62816 lower bond: 103273.82084candle price: 103302.09 RSI: 43.2457 stochRSI: 38.79 upper bond: 103371.13826 lower bond: 103264.93874candle price: 103302.1 RSI: 43.2513 stochRSI: 82.84 upper bond: 103368.0824 lower bond: 103262.1606candle price: 103262.91 RSI: 28.7971 stochRSI: 41.07 upper bond: 103349.91624 lower bond: 103257.96476candle price: 103262.9 RSI: 28.7941 stochRSI: 0.0 upper bond: 103332.61438 lower bond: 103256.95962candle price: 103273.24 RSI: 37.1846 stochRSI: 19.37 upper bond: 103318.70581 lower bond: 103253.26219candle price: 103268.33 RSI: 34.7561 stochRSI: 52.42 upper bond: 103309.53015 lower bond: 103252.01685candle price: 103262.91 RSI: 32.0738 stochRSI: 35.05 upper bond: 103307.11882 lower bond: 103249.74618candle price: 103262.91 RSI: 32.0801 stochRSI: 31.869999999999997 upper bond: 103306.0948 lower bond: 103246.6992candle price: 103250.01 RSI: 26.1038 stochRSI: 0.04 upper bond: 103299.53317 lower bond: 103239.76683candle price: 103250.01 RSI: 26.1134 stochRSI: 0.16 upper bond: 103282.88453 lower bond: 103242.03847end time: 2025-01-20 21:43:59
+we hit the time limit
+we come out of time frame:1s
+================================================================candle price: 103220.0 RSI: 33.4051 stochRSI: 4.12 upper bond: 104035.56907 lower bond: 103144.40493we are checking for signal from time: 2025-01-20 21:44:00till time: 2025-01-20 21:44:59
+##########################################
+PARTIAL
+we are in timeframe: 1s
+we are checking for signal from time: 2025-01-20 21:44:00till time: 2025-01-20 21:44:59
+===============================================
+we are in timeframe: 1s
+previous candle time: 2025-01-20 21:44:01
+current candle time: 2025-01-20 21:44:02
+start time: 2025-01-20 21:44:00
+end time: 2025-01-20 21:44:59
+candle price: 103259.48 RSI: 49.6054 stochRSI: 100.0 upper bond: 103280.05337 lower bond: 103225.83563candle price: 103287.99 RSI: 63.8418 stochRSI: 100.0 upper bond: 103285.73503 lower bond: 103222.79697candle price: 103288.0 RSI: 63.8461 stochRSI: 100.0 upper bond: 103297.18884 lower bond: 103218.32816candle price: 103291.31 RSI: 65.5613 stochRSI: 99.99 upper bond: 103308.33865 lower bond: 103217.94935candle price: 103291.32 RSI: 65.5675 stochRSI: 99.98 upper bond: 103314.42036 lower bond: 103220.12964candle price: 103326.99 RSI: 80.1456 stochRSI: 100.0 upper bond: 103333.79869 lower bond: 103221.03131candle price: 103337.42 RSI: 82.8235 stochRSI: 100.0 upper bond: 103343.86481 lower bond: 103230.47519candle price: 103337.41 RSI: 82.8119 stochRSI: 99.94 upper bond: 103350.85905 lower bond: 103252.57595candle price: 103364.0 RSI: 88.4156 stochRSI: 100.0 upper bond: 103368.98139 lower bond: 103262.33661candle price: 103364.0 RSI: 88.4044 stochRSI: 99.96000000000001 upper bond: 103380.18511 lower bond: 103266.33389candle price: 103352.0 RSI: 71.1508 stochRSI: 64.79 upper bond: 103387.58379 lower bond: 103280.58121candle price: 103351.99 RSI: 71.1387 stochRSI: 0.0 upper bond: 103386.10408 lower bond: 103294.19592candle price: 103326.5 RSI: 46.4274 stochRSI: 0.0 upper bond: 103378.1416 lower bond: 103311.1694candle price: 103320.0 RSI: 42.3229 stochRSI: 0.0 upper bond: 103376.95353 lower bond: 103313.07647candle price: 103320.0 RSI: 42.325 stochRSI: 0.01 upper bond: 103378.86434 lower bond: 103306.91566candle price: 103302.62 RSI: 30.2998 stochRSI: 0.0 upper bond: 103381.31678 lower bond: 103299.24322candle price: 103292.25 RSI: 28.0405 stochRSI: 2.53 upper bond: 103379.93839 lower bond: 103280.04661candle price: 103308.49 RSI: 44.4913 stochRSI: 35.92 upper bond: 103371.03853 lower bond: 103276.22147candle price: 103339.41 RSI: 63.354 stochRSI: 99.99 upper bond: 103356.42845 lower bond: 103280.71855candle price: 103339.41 RSI: 63.35 stochRSI: 99.99 upper bond: 103351.28296 lower bond: 103283.34904candle price: 103358.61 RSI: 71.6668 stochRSI: 100.0 upper bond: 103362.53479 lower bond: 103279.08021end time: 2025-01-20 21:44:59
+we hit the time limit
+we come out of time frame:1s
+================================================================end time: 2025-01-20 21:44:59
+we hit the time limit
+we come out of time frame:1m
+================================================================candle price: 103358.62 RSI: 41.3199 stochRSI: 0.7100000000000001 upper bond: 104261.83864 lower bond: 103395.27936we are checking for signal from time: 2025-01-20 21:45:00till time: 2025-01-20 21:49:59
+##########################################
+PARTIAL
+we are in timeframe: 1m
+we are checking for signal from time: 2025-01-20 21:45:00till time: 2025-01-20 21:49:59
+===============================================
+we are in timeframe: 1m
+previous candle time: 2025-01-20 21:44:00
+current candle time: 2025-01-20 21:45:00
+start time: 2025-01-20 21:45:00
+end time: 2025-01-20 21:49:59
+candle price: 103239.51 RSI: 36.9499 stochRSI: 19.67 upper bond: 103983.68792 lower bond: 103091.69808we are checking for signal from time: 2025-01-20 21:46:00till time: 2025-01-20 21:46:59
+candle price: 103274.11 RSI: 38.7124 stochRSI: 29.310000000000002 upper bond: 103974.82454 lower bond: 103061.97146we are checking for signal from time: 2025-01-20 21:47:00till time: 2025-01-20 21:47:59
+candle price: 103101.26 RSI: 33.6516 stochRSI: 16.64 upper bond: 103968.45461 lower bond: 103006.59939we are checking for signal from time: 2025-01-20 21:48:00till time: 2025-01-20 21:48:59
+candle price: 102947.89 RSI: 29.9147 stochRSI: 10.2 upper bond: 103976.92964 lower bond: 102924.85836we are checking for signal from time: 2025-01-20 21:49:00till time: 2025-01-20 21:49:59
+##########################################
+PARTIAL
+we are in timeframe: 1s
+we are checking for signal from time: 2025-01-20 21:49:00till time: 2025-01-20 21:49:59
+===============================================
+we are in timeframe: 1s
+previous candle time: 2025-01-20 21:49:00
+current candle time: 2025-01-20 21:49:01
+start time: 2025-01-20 21:49:00
+end time: 2025-01-20 21:49:59
+candle price: 102989.7 RSI: 60.9619 stochRSI: 100.0 upper bond: 102974.83126 lower bond: 102885.46874candle price: 103002.01 RSI: 64.5524 stochRSI: 100.0 upper bond: 102996.34892 lower bond: 102879.90008candle price: 103005.11 RSI: 62.1248 stochRSI: 94.08 upper bond: 103027.17107 lower bond: 102879.49593candle price: 103029.41 RSI: 68.8624 stochRSI: 93.27 upper bond: 103049.66085 lower bond: 102885.58415candle price: 103085.45 RSI: 77.8116 stochRSI: 98.72 upper bond: 103097.64082 lower bond: 102889.68518candle price: 103087.99 RSI: 78.2112 stochRSI: 95.48 upper bond: 103115.43336 lower bond: 102905.28964candle price: 103065.93 RSI: 65.5876 stochRSI: 54.690000000000005 upper bond: 103125.91767 lower bond: 102935.42233candle price: 103079.46 RSI: 69.1497 stochRSI: 38.04 upper bond: 103123.8794 lower bond: 102973.8636candle price: 103079.18 RSI: 65.6157 stochRSI: 29.080000000000002 upper bond: 103124.62824 lower bond: 102991.97576candle price: 103089.48 RSI: 68.5121 stochRSI: 14.510000000000002 upper bond: 103125.98225 lower bond: 103006.58375candle price: 103123.02 RSI: 76.3568 stochRSI: 75.42999999999999 upper bond: 103128.39924 lower bond: 103036.51276candle price: 103169.44 RSI: 83.5332 stochRSI: 100.0 upper bond: 103157.14037 lower bond: 103041.12063candle price: 103151.04 RSI: 72.415 stochRSI: 79.32000000000001 upper bond: 103174.41345 lower bond: 103038.55155candle price: 103171.99 RSI: 76.7367 stochRSI: 46.660000000000004 upper bond: 103192.11101 lower bond: 103042.47299candle price: 103146.14 RSI: 62.9469 stochRSI: 0.0 upper bond: 103195.77252 lower bond: 103062.22148candle price: 103173.24 RSI: 70.6018 stochRSI: 14.42 upper bond: 103196.74979 lower bond: 103083.34021candle price: 103148.79 RSI: 58.2596 stochRSI: 15.790000000000001 upper bond: 103190.54103 lower bond: 103103.85297candle price: 103156.83 RSI: 60.591 stochRSI: 11.93 upper bond: 103178.64415 lower bond: 103129.98485candle price: 103171.08 RSI: 65.4054 stochRSI: 38.99 upper bond: 103176.06181 lower bond: 103139.27919candle price: 103174.74 RSI: 66.5965 stochRSI: 70.43 upper bond: 103180.29479 lower bond: 103138.47721candle price: 103120.01 RSI: 39.4541 stochRSI: 48.13 upper bond: 103186.90661 lower bond: 103131.06239candle price: 103130.89 RSI: 44.7072 stochRSI: 33.43 upper bond: 103186.65862 lower bond: 103126.53738end time: 2025-01-20 21:49:59
+we hit the time limit
+we come out of time frame:1s
+================================================================end time: 2025-01-20 21:49:59
+we hit the time limit
+we come out of time frame:1m
+================================================================candle price: 103137.66 RSI: 37.7819 stochRSI: 0.0 upper bond: 104326.65905 lower bond: 103276.48095we are checking for signal from time: 2025-01-20 21:50:00till time: 2025-01-20 21:54:59
+##########################################
+PARTIAL
+we are in timeframe: 1m
+we are checking for signal from time: 2025-01-20 21:50:00till time: 2025-01-20 21:54:59
+===============================================
+we are in timeframe: 1m
+previous candle time: 2025-01-20 21:49:00
+current candle time: 2025-01-20 21:50:00
+start time: 2025-01-20 21:50:00
+end time: 2025-01-20 21:54:59
+candle price: 103120.57 RSI: 38.4676 stochRSI: 54.400000000000006 upper bond: 103895.0669 lower bond: 102878.0041we are checking for signal from time: 2025-01-20 21:51:00till time: 2025-01-20 21:51:59
+candle price: 103206.24 RSI: 42.3127 stochRSI: 87.74 upper bond: 103828.85829 lower bond: 102882.82771we are checking for signal from time: 2025-01-20 21:52:00till time: 2025-01-20 21:52:59
+##########################################
+PARTIAL
+we are in timeframe: 1s
+we are checking for signal from time: 2025-01-20 21:52:00till time: 2025-01-20 21:52:59
+===============================================
+we are in timeframe: 1s
+previous candle time: 2025-01-20 21:52:00
+current candle time: 2025-01-20 21:52:01
+start time: 2025-01-20 21:52:00
+end time: 2025-01-20 21:52:59
+candle price: 103191.25 RSI: 59.9059 stochRSI: 63.190000000000005 upper bond: 103249.97097 lower bond: 103079.30003candle price: 103174.21 RSI: 52.8435 stochRSI: 0.0 upper bond: 103240.56276 lower bond: 103111.31224candle price: 103129.18 RSI: 37.2392 stochRSI: 0.0 upper bond: 103237.27193 lower bond: 103120.01607candle price: 103136.23 RSI: 40.2176 stochRSI: 8.15 upper bond: 103236.24885 lower bond: 103121.90015candle price: 103104.0 RSI: 30.5297 stochRSI: 2.77 upper bond: 103241.92094 lower bond: 103095.48106candle price: 103083.42 RSI: 25.7452 stochRSI: 0.0 upper bond: 103237.36659 lower bond: 103075.90641candle price: 103040.0 RSI: 18.4914 stochRSI: 0.0 upper bond: 103234.32381 lower bond: 103050.04119candle price: 103041.68 RSI: 19.4372 stochRSI: 0.9199999999999999 upper bond: 103231.00249 lower bond: 103036.90551candle price: 103047.37 RSI: 22.7791 stochRSI: 18.29 upper bond: 103203.51314 lower bond: 103017.10286candle price: 103064.69 RSI: 33.475 stochRSI: 43.78 upper bond: 103185.80631 lower bond: 103011.94769candle price: 103057.93 RSI: 32.1161 stochRSI: 72.74000000000001 upper bond: 103160.89841 lower bond: 103013.44359candle price: 103094.38 RSI: 50.7272 stochRSI: 100.0 upper bond: 103142.02686 lower bond: 103016.14514candle price: 103075.04 RSI: 43.502 stochRSI: 85.06 upper bond: 103123.08842 lower bond: 103022.84558candle price: 103056.36 RSI: 36.9879 stochRSI: 62.470000000000006 upper bond: 103098.21642 lower bond: 103032.18958candle price: 103054.31 RSI: 36.306 stochRSI: 45.6 upper bond: 103090.04085 lower bond: 103033.15915candle price: 103080.0 RSI: 49.6594 stochRSI: 60.160000000000004 upper bond: 103089.37993 lower bond: 103033.47807candle price: 103071.15 RSI: 45.8216 stochRSI: 87.57000000000001 upper bond: 103090.416 lower bond: 103039.388candle price: 103062.19 RSI: 42.0165 stochRSI: 48.13 upper bond: 103088.50135 lower bond: 103046.77465candle price: 103062.19 RSI: 42.0179 stochRSI: 42.79 upper bond: 103087.99365 lower bond: 103048.32435candle price: 103068.45 RSI: 46.8382 stochRSI: 54.81 upper bond: 103087.87685 lower bond: 103048.92115candle price: 103075.05 RSI: 51.4245 stochRSI: 100.0 upper bond: 103082.79971 lower bond: 103051.80529candle price: 103075.05 RSI: 51.4246 stochRSI: 99.97 upper bond: 103083.48725 lower bond: 103051.77275end time: 2025-01-20 21:52:59
+we hit the time limit
+we come out of time frame:1s
+================================================================candle price: 103132.0 RSI: 39.9811 stochRSI: 86.86 upper bond: 103770.31857 lower bond: 102879.32843we are checking for signal from time: 2025-01-20 21:53:00till time: 2025-01-20 21:53:59
+##########################################
+PARTIAL
+we are in timeframe: 1s
+we are checking for signal from time: 2025-01-20 21:53:00till time: 2025-01-20 21:53:59
+===============================================
+we are in timeframe: 1s
+previous candle time: 2025-01-20 21:53:00
+current candle time: 2025-01-20 21:53:01
+start time: 2025-01-20 21:53:00
+end time: 2025-01-20 21:53:59
+candle price: 103103.14 RSI: 57.1636 stochRSI: 78.36 upper bond: 103123.9657 lower bond: 103032.8683candle price: 103116.01 RSI: 61.1273 stochRSI: 33.1 upper bond: 103135.11566 lower bond: 103034.80234candle price: 103093.1 RSI: 51.3006 stochRSI: 9.11 upper bond: 103135.97286 lower bond: 103040.12514candle price: 103111.62 RSI: 56.8496 stochRSI: 17.09 upper bond: 103140.2011 lower bond: 103050.1859candle price: 103101.71 RSI: 52.7954 stochRSI: 8.82 upper bond: 103140.41007 lower bond: 103055.97093candle price: 103120.0 RSI: 59.4592 stochRSI: 37.62 upper bond: 103142.98005 lower bond: 103065.05795candle price: 103119.9 RSI: 57.9974 stochRSI: 57.82000000000001 upper bond: 103142.16948 lower bond: 103073.60552candle price: 103110.31 RSI: 52.6342 stochRSI: 48.89 upper bond: 103137.2358 lower bond: 103085.6382candle price: 103117.03 RSI: 55.0956 stochRSI: 26.31 upper bond: 103130.28359 lower bond: 103091.74341candle price: 103099.95 RSI: 47.5372 stochRSI: 14.13 upper bond: 103129.61929 lower bond: 103088.83871candle price: 103102.06 RSI: 48.5821 stochRSI: 18.12 upper bond: 103128.04419 lower bond: 103092.61581candle price: 103087.77 RSI: 42.1461 stochRSI: 0.0 upper bond: 103129.98517 lower bond: 103083.67483candle price: 103098.21 RSI: 48.4413 stochRSI: 27.6 upper bond: 103130.07183 lower bond: 103082.75017candle price: 103164.4 RSI: 72.1714 stochRSI: 81.41000000000001 upper bond: 103152.58985 lower bond: 103068.17915candle price: 103134.76 RSI: 57.5832 stochRSI: 49.57 upper bond: 103156.60731 lower bond: 103067.55369candle price: 103157.98 RSI: 61.5855 stochRSI: 65.53 upper bond: 103171.90552 lower bond: 103063.01848candle price: 103198.68 RSI: 69.7077 stochRSI: 76.49000000000001 upper bond: 103192.14717 lower bond: 103055.88483candle price: 103220.0 RSI: 68.0428 stochRSI: 84.56 upper bond: 103241.24171 lower bond: 103046.19629candle price: 103196.01 RSI: 59.8188 stochRSI: 46.08 upper bond: 103258.49871 lower bond: 103061.94929candle price: 103196.01 RSI: 59.8188 stochRSI: 22.509999999999998 upper bond: 103258.23717 lower bond: 103083.85783candle price: 103189.68 RSI: 55.9942 stochRSI: 8.35 upper bond: 103248.33237 lower bond: 103123.27463candle price: 103152.64 RSI: 44.4745 stochRSI: 0.0 upper bond: 103248.71198 lower bond: 103122.34102end time: 2025-01-20 21:53:59
+we hit the time limit
+we come out of time frame:1s
+================================================================candle price: 103079.11 RSI: 38.3594 stochRSI: 83.1 upper bond: 103667.98285 lower bond: 102903.17315we are checking for signal from time: 2025-01-20 21:54:00till time: 2025-01-20 21:54:59
+end time: 2025-01-20 21:54:59
+we hit the time limit
+we come out of time frame:1m
+================================================================candle price: 103203.93 RSI: 39.4563 stochRSI: 3.4299999999999997 upper bond: 104360.45283 lower bond: 103188.02917we are checking for signal from time: 2025-01-20 21:55:00till time: 2025-01-20 21:59:59
+##########################################
+PARTIAL
+we are in timeframe: 1m
+we are checking for signal from time: 2025-01-20 21:55:00till time: 2025-01-20 21:59:59
+===============================================
+we are in timeframe: 1m
+previous candle time: 2025-01-20 21:54:00
+current candle time: 2025-01-20 21:55:00
+start time: 2025-01-20 21:55:00
+end time: 2025-01-20 21:59:59
+candle price: 103099.93 RSI: 40.7065 stochRSI: 81.36 upper bond: 103467.77755 lower bond: 102986.00645we are checking for signal from time: 2025-01-20 21:56:00till time: 2025-01-20 21:56:59
+candle price: 103000.81 RSI: 37.7118 stochRSI: 76.95 upper bond: 103458.14134 lower bond: 102958.24366we are checking for signal from time: 2025-01-20 21:57:00till time: 2025-01-20 21:57:59
+candle price: 102941.82 RSI: 36.0138 stochRSI: 57.93000000000001 upper bond: 103439.79747 lower bond: 102928.67053we are checking for signal from time: 2025-01-20 21:58:00till time: 2025-01-20 21:58:59
+##########################################
+PARTIAL
+we are in timeframe: 1s
+we are checking for signal from time: 2025-01-20 21:58:00till time: 2025-01-20 21:58:59
+===============================================
+we are in timeframe: 1s
+previous candle time: 2025-01-20 21:58:00
+current candle time: 2025-01-20 21:58:01
+start time: 2025-01-20 21:58:00
+end time: 2025-01-20 21:58:59
+candle price: 102959.97 RSI: 63.503 stochRSI: 39.739999999999995 upper bond: 102963.30797 lower bond: 102930.08203candle price: 102952.91 RSI: 55.5111 stochRSI: 58.730000000000004 upper bond: 102964.30239 lower bond: 102932.17261candle price: 102959.98 RSI: 61.0959 stochRSI: 78.19 upper bond: 102966.49763 lower bond: 102936.82537candle price: 102954.14 RSI: 54.0668 stochRSI: 54.11 upper bond: 102966.50169 lower bond: 102939.99431candle price: 102894.8 RSI: 21.5341 stochRSI: 17.849999999999998 upper bond: 102978.26656 lower bond: 102918.18444candle price: 102894.81 RSI: 21.5437 stochRSI: 0.02 upper bond: 102986.63283 lower bond: 102891.67717candle price: 102897.03 RSI: 32.1394 stochRSI: 23.65 upper bond: 102986.03418 lower bond: 102883.88582candle price: 102897.04 RSI: 32.1466 stochRSI: 26.83 upper bond: 102985.52742 lower bond: 102871.13358candle price: 102892.01 RSI: 30.0131 stochRSI: 28.38 upper bond: 102979.74488 lower bond: 102864.88812candle price: 102870.5 RSI: 22.588 stochRSI: 12.53 upper bond: 102968.27869 lower bond: 102852.86531candle price: 102865.99 RSI: 21.3045 stochRSI: 4.03 upper bond: 102962.00629 lower bond: 102849.73871candle price: 102852.0 RSI: 17.4882 stochRSI: 0.0 upper bond: 102936.86449 lower bond: 102846.24951candle price: 102841.48 RSI: 15.2556 stochRSI: 0.0 upper bond: 102922.60887 lower bond: 102840.91513candle price: 102877.44 RSI: 44.4807 stochRSI: 100.0 upper bond: 102918.52931 lower bond: 102837.91469candle price: 102896.0 RSI: 55.5083 stochRSI: 100.0 upper bond: 102910.91805 lower bond: 102839.92795candle price: 102891.93 RSI: 52.8389 stochRSI: 95.58 upper bond: 102909.09344 lower bond: 102840.62656candle price: 102868.01 RSI: 39.4193 stochRSI: 76.11 upper bond: 102904.6314 lower bond: 102840.9866candle price: 102827.17 RSI: 25.8076 stochRSI: 28.52 upper bond: 102905.66741 lower bond: 102829.40659candle price: 102822.37 RSI: 24.66 stochRSI: 0.0 upper bond: 102910.01984 lower bond: 102816.35716candle price: 102766.19 RSI: 15.1599 stochRSI: 0.0 upper bond: 102930.39877 lower bond: 102772.77223candle price: 102757.61 RSI: 14.1542 stochRSI: 0.0 upper bond: 102939.02539 lower bond: 102745.61861candle price: 102761.11 RSI: 19.5033 stochRSI: 18.17 upper bond: 102931.17013 lower bond: 102719.17887end time: 2025-01-20 21:58:59
+we hit the time limit
+we come out of time frame:1s
+================================================================candle price: 102741.29 RSI: 30.9173 stochRSI: 34.96 upper bond: 103468.36097 lower bond: 102842.74703we are checking for signal from time: 2025-01-20 21:59:00till time: 2025-01-20 21:59:59
+##########################################
+PARTIAL
+we are in timeframe: 1s
+we are checking for signal from time: 2025-01-20 21:59:00till time: 2025-01-20 21:59:59
+===============================================
+we are in timeframe: 1s
+previous candle time: 2025-01-20 21:59:01
+current candle time: 2025-01-20 21:59:02
+start time: 2025-01-20 21:59:00
+end time: 2025-01-20 21:59:59
+candle price: 102760.0 RSI: 33.3724 stochRSI: 44.91 upper bond: 102863.32056 lower bond: 102702.16344candle price: 102767.86 RSI: 37.9325 stochRSI: 100.0 upper bond: 102821.13494 lower bond: 102717.90806candle price: 102767.85 RSI: 37.928 stochRSI: 99.99 upper bond: 102800.05461 lower bond: 102727.60539candle price: 102774.3 RSI: 47.5945 stochRSI: 100.0 upper bond: 102783.55128 lower bond: 102735.49972candle price: 102756.73 RSI: 40.3268 stochRSI: 68.97 upper bond: 102782.66569 lower bond: 102734.98931candle price: 102773.37 RSI: 50.0156 stochRSI: 88.05 upper bond: 102784.01477 lower bond: 102739.59923candle price: 102761.48 RSI: 43.6901 stochRSI: 90.71000000000001 upper bond: 102780.94307 lower bond: 102748.47793candle price: 102757.78 RSI: 41.9165 stochRSI: 49.13 upper bond: 102780.29324 lower bond: 102746.88876candle price: 102741.3 RSI: 34.1858 stochRSI: 0.0 upper bond: 102782.02863 lower bond: 102737.18637candle price: 102760.0 RSI: 47.8236 stochRSI: 57.440000000000005 upper bond: 102780.57269 lower bond: 102737.07131candle price: 102728.25 RSI: 33.2857 stochRSI: 33.36 upper bond: 102780.11778 lower bond: 102732.63222candle price: 102752.85 RSI: 48.179 stochRSI: 33.33 upper bond: 102779.00307 lower bond: 102728.65193candle price: 102733.18 RSI: 39.8734 stochRSI: 63.3 upper bond: 102778.37781 lower bond: 102724.27119candle price: 102731.65 RSI: 39.3478 stochRSI: 44.0 upper bond: 102772.00519 lower bond: 102722.54081candle price: 102700.01 RSI: 28.2716 stochRSI: 3.7900000000000005 upper bond: 102770.44256 lower bond: 102708.42944candle price: 102674.84 RSI: 22.4932 stochRSI: 0.0 upper bond: 102778.19447 lower bond: 102684.12953candle price: 102611.38 RSI: 14.0794 stochRSI: 0.0 upper bond: 102803.04563 lower bond: 102633.38537candle price: 102595.24 RSI: 16.0779 stochRSI: 9.28 upper bond: 102806.54916 lower bond: 102584.95284candle price: 102614.23 RSI: 28.8012 stochRSI: 23.72 upper bond: 102795.5931 lower bond: 102553.1659candle price: 102570.0 RSI: 23.205 stochRSI: 63.33 upper bond: 102781.4956 lower bond: 102538.1534candle price: 102585.46 RSI: 30.04 stochRSI: 78.14999999999999 upper bond: 102747.536 lower bond: 102524.114end time: 2025-01-20 21:59:59
+we hit the time limit
+we come out of time frame:1s
+================================================================end time: 2025-01-20 21:59:59
+we hit the time limit
+we come out of time frame:1m
+================================================================candle price: 102596.0 RSI: 31.1693 stochRSI: 3.4299999999999997 upper bond: 104498.78722 lower bond: 102939.29478we are checking for signal from time: 2025-01-20 22:00:00till time: 2025-01-20 22:04:59
+##########################################
+PARTIAL
+we are in timeframe: 1m
+we are checking for signal from time: 2025-01-20 22:00:00till time: 2025-01-20 22:04:59
+===============================================
+we are in timeframe: 1m
+previous candle time: 2025-01-20 21:59:00
+current candle time: 2025-01-20 22:00:00
+start time: 2025-01-20 22:00:00
+end time: 2025-01-20 22:04:59
+candle price: 102356.88 RSI: 23.671 stochRSI: 2.35 upper bond: 103561.80459 lower bond: 102575.45641we are checking for signal from time: 2025-01-20 22:01:00till time: 2025-01-20 22:01:59
+##########################################
+PARTIAL
+we are in timeframe: 1s
+we are checking for signal from time: 2025-01-20 22:01:00till time: 2025-01-20 22:01:59
+===============================================
+we are in timeframe: 1s
+previous candle time: 2025-01-20 22:01:00
+current candle time: 2025-01-20 22:01:01
+start time: 2025-01-20 22:01:00
+end time: 2025-01-20 22:01:59
+candle price: 102370.23 RSI: 43.3969 stochRSI: 72.09 upper bond: 102418.86284 lower bond: 102340.19616candle price: 102403.98 RSI: 53.8222 stochRSI: 98.71 upper bond: 102415.11389 lower bond: 102340.69311candle price: 102393.88 RSI: 50.3965 stochRSI: 93.0 upper bond: 102416.41663 lower bond: 102340.25737candle price: 102369.03 RSI: 43.6417 stochRSI: 40.04 upper bond: 102413.17836 lower bond: 102339.84264candle price: 102335.89 RSI: 36.9169 stochRSI: 9.83 upper bond: 102416.28982 lower bond: 102332.33118candle price: 102336.31 RSI: 37.0777 stochRSI: 15.25 upper bond: 102413.41601 lower bond: 102323.41399candle price: 102416.0 RSI: 60.8757 stochRSI: 87.56 upper bond: 102418.18109 lower bond: 102320.80491candle price: 102396.0 RSI: 54.8085 stochRSI: 84.28999999999999 upper bond: 102423.39413 lower bond: 102322.79087candle price: 102331.19 RSI: 40.2405 stochRSI: 58.69 upper bond: 102424.93291 lower bond: 102318.68209candle price: 102321.24 RSI: 38.4733 stochRSI: 20.14 upper bond: 102427.05905 lower bond: 102306.60395candle price: 102329.41 RSI: 41.0117 stochRSI: 19.85 upper bond: 102420.52576 lower bond: 102298.66324candle price: 102283.6 RSI: 31.9952 stochRSI: 6.03 upper bond: 102410.32089 lower bond: 102283.10111candle price: 102292.39 RSI: 35.2476 stochRSI: 3.75 upper bond: 102410.08556 lower bond: 102267.91144candle price: 102286.87 RSI: 36.9845 stochRSI: 27.200000000000003 upper bond: 102409.18466 lower bond: 102255.85234candle price: 102318.83 RSI: 47.0049 stochRSI: 60.699999999999996 upper bond: 102408.18518 lower bond: 102250.63182candle price: 102392.43 RSI: 63.0807 stochRSI: 100.0 upper bond: 102397.31449 lower bond: 102254.20051candle price: 102339.5 RSI: 49.0201 stochRSI: 79.08 upper bond: 102396.51027 lower bond: 102255.14873candle price: 102308.84 RSI: 44.1587 stochRSI: 37.03 upper bond: 102395.86778 lower bond: 102251.28122candle price: 102325.54 RSI: 47.8431 stochRSI: 37.269999999999996 upper bond: 102395.40751 lower bond: 102250.53649candle price: 102295.32 RSI: 41.7742 stochRSI: 22.03 upper bond: 102394.7035 lower bond: 102251.5965end time: 2025-01-20 22:01:59
+we hit the time limit
+we come out of time frame:1s
+================================================================candle price: 102306.64 RSI: 22.8948 stochRSI: 0.0 upper bond: 103601.73671 lower bond: 102436.69129we are checking for signal from time: 2025-01-20 22:02:00till time: 2025-01-20 22:02:59
+##########################################
+BUY
+we are in timeframe: 1s
+we are checking for signal from time: 2025-01-20 22:02:00till time: 2025-01-20 22:02:59
+candle price: 102210.5 RSI: 21.4456 stochRSI: 0.0 upper bond: 103626.86036 lower bond: 102300.61664we are checking for signal from time: 2025-01-20 22:03:00till time: 2025-01-20 22:03:59
+##########################################
+BUY
+we are in timeframe: 1s
+we are checking for signal from time: 2025-01-20 22:03:00till time: 2025-01-20 22:03:59
+candle price: 102008.01 RSI: 18.7531 stochRSI: 0.0 upper bond: 103674.23615 lower bond: 102132.04185we are checking for signal from time: 2025-01-20 22:04:00till time: 2025-01-20 22:04:59
+##########################################
+BUY
+we are in timeframe: 1s
+we are checking for signal from time: 2025-01-20 22:04:00till time: 2025-01-20 22:04:59
+end time: 2025-01-20 22:04:59
+we hit the time limit
+we come out of time frame:1m
+================================================================candle price: 101983.09 RSI: 25.3814 stochRSI: 3.4299999999999997 upper bond: 104696.36457 lower bond: 102543.26143we are checking for signal from time: 2025-01-20 22:05:00till time: 2025-01-20 22:09:59
+##########################################
+PARTIAL
+we are in timeframe: 1m
+we are checking for signal from time: 2025-01-20 22:05:00till time: 2025-01-20 22:09:59
+===============================================
+we are in timeframe: 1m
+previous candle time: 2025-01-20 22:04:00
+current candle time: 2025-01-20 22:05:00
+start time: 2025-01-20 22:05:00
+end time: 2025-01-20 22:09:59
+candle price: 102376.92 RSI: 36.2145 stochRSI: 23.07 upper bond: 103630.90951 lower bond: 101951.55649we are checking for signal from time: 2025-01-20 22:06:00till time: 2025-01-20 22:06:59
+candle price: 102521.24 RSI: 41.2647 stochRSI: 52.7 upper bond: 103570.49446 lower bond: 101936.68454we are checking for signal from time: 2025-01-20 22:07:00till time: 2025-01-20 22:07:59
+candle price: 102707.84 RSI: 47.0969 stochRSI: 86.03 upper bond: 103535.18598 lower bond: 101932.65102we are checking for signal from time: 2025-01-20 22:08:00till time: 2025-01-20 22:08:59
+##########################################
+PARTIAL
+we are in timeframe: 1s
+we are checking for signal from time: 2025-01-20 22:08:00till time: 2025-01-20 22:08:59
+===============================================
+we are in timeframe: 1s
+previous candle time: 2025-01-20 22:07:59
+current candle time: 2025-01-20 22:08:00
+start time: 2025-01-20 22:08:00
+end time: 2025-01-20 22:08:59
+candle price: 102707.84 RSI: 85.7908 stochRSI: 100.0 upper bond: 102737.59301 lower bond: 102502.37399candle price: 102711.62 RSI: 81.3512 stochRSI: 44.31 upper bond: 102749.45399 lower bond: 102540.54101candle price: 102769.5 RSI: 87.2446 stochRSI: 78.36999999999999 upper bond: 102769.40282 lower bond: 102559.65518candle price: 102820.84 RSI: 86.383 stochRSI: 87.31 upper bond: 102818.30461 lower bond: 102582.24139candle price: 102820.39 RSI: 80.6586 stochRSI: 25.55 upper bond: 102842.28972 lower bond: 102595.64228candle price: 102837.63 RSI: 82.3078 stochRSI: 23.580000000000002 upper bond: 102876.69656 lower bond: 102615.29744candle price: 102896.77 RSI: 86.9076 stochRSI: 48.29 upper bond: 102907.95141 lower bond: 102628.55959candle price: 102897.03 RSI: 86.92 stochRSI: 67.11 upper bond: 102942.03503 lower bond: 102661.17497candle price: 102905.11 RSI: 86.2983 stochRSI: 67.60000000000001 upper bond: 102959.39248 lower bond: 102683.53952candle price: 102848.0 RSI: 59.7594 stochRSI: 30.620000000000005 upper bond: 102948.71562 lower bond: 102748.26938candle price: 102864.21 RSI: 62.042 stochRSI: 9.21 upper bond: 102930.72921 lower bond: 102791.75979candle price: 102915.56 RSI: 70.3861 stochRSI: 33.68 upper bond: 102938.71888 lower bond: 102799.32912candle price: 102915.57 RSI: 70.3877 stochRSI: 45.95 upper bond: 102942.53037 lower bond: 102825.86663candle price: 102920.92 RSI: 64.503 stochRSI: 48.91 upper bond: 102955.61149 lower bond: 102839.18351candle price: 102933.86 RSI: 64.5996 stochRSI: 45.6 upper bond: 102965.50055 lower bond: 102837.97145candle price: 102944.75 RSI: 65.0317 stochRSI: 43.19 upper bond: 102980.43294 lower bond: 102837.19406candle price: 102953.48 RSI: 66.194 stochRSI: 13.16 upper bond: 102992.20808 lower bond: 102840.01892candle price: 102949.21 RSI: 64.3752 stochRSI: 13.62 upper bond: 102986.41643 lower bond: 102867.77057candle price: 102976.15 RSI: 70.6459 stochRSI: 44.2 upper bond: 102974.86525 lower bond: 102907.76975candle price: 102940.01 RSI: 54.7838 stochRSI: 15.8 upper bond: 102975.56568 lower bond: 102919.18732candle price: 102940.78 RSI: 53.7557 stochRSI: 9.969999999999999 upper bond: 102972.78879 lower bond: 102925.69221candle price: 102928.0 RSI: 48.5792 stochRSI: 8.63 upper bond: 102971.69083 lower bond: 102928.99317end time: 2025-01-20 22:08:59
+we hit the time limit
+we come out of time frame:1s
+================================================================candle price: 102907.59 RSI: 52.5307 stochRSI: 96.28999999999999 upper bond: 103531.20878 lower bond: 101932.59822we are checking for signal from time: 2025-01-20 22:09:00till time: 2025-01-20 22:09:59
+##########################################
+PARTIAL
+we are in timeframe: 1s
+we are checking for signal from time: 2025-01-20 22:09:00till time: 2025-01-20 22:09:59
+===============================================
+we are in timeframe: 1s
+previous candle time: 2025-01-20 22:09:01
+current candle time: 2025-01-20 22:09:02
+start time: 2025-01-20 22:09:00
+end time: 2025-01-20 22:09:59
+candle price: 102868.98 RSI: 33.4235 stochRSI: 0.0 upper bond: 102993.37349 lower bond: 102885.22751candle price: 102780.32 RSI: 21.0034 stochRSI: 0.0 upper bond: 103025.19284 lower bond: 102809.96116candle price: 102781.71 RSI: 25.8264 stochRSI: 10.6 upper bond: 103030.41822 lower bond: 102772.98178candle price: 102776.71 RSI: 27.9287 stochRSI: 19.580000000000002 upper bond: 103013.71703 lower bond: 102733.29597candle price: 102757.99 RSI: 28.6315 stochRSI: 22.96 upper bond: 103001.14649 lower bond: 102706.15551candle price: 102750.86 RSI: 28.3286 stochRSI: 53.59 upper bond: 102963.35492 lower bond: 102687.87908candle price: 102740.44 RSI: 26.8021 stochRSI: 62.21 upper bond: 102923.89034 lower bond: 102685.87866candle price: 102720.58 RSI: 23.9425 stochRSI: 32.42 upper bond: 102886.63875 lower bond: 102683.75825candle price: 102702.2 RSI: 21.4884 stochRSI: 11.15 upper bond: 102869.01 lower bond: 102681.844candle price: 102714.3 RSI: 30.8437 stochRSI: 57.87 upper bond: 102827.18991 lower bond: 102692.67109candle price: 102652.01 RSI: 23.0004 stochRSI: 21.41 upper bond: 102819.62587 lower bond: 102656.56013candle price: 102582.73 RSI: 16.7252 stochRSI: 3.9800000000000004 upper bond: 102820.50393 lower bond: 102602.45807candle price: 102525.62 RSI: 13.2462 stochRSI: 0.0 upper bond: 102829.82599 lower bond: 102545.77201candle price: 102548.3 RSI: 20.9445 stochRSI: 28.92 upper bond: 102817.19652 lower bond: 102494.99648candle price: 102569.93 RSI: 28.6774 stochRSI: 53.73 upper bond: 102791.73705 lower bond: 102480.95595candle price: 102612.0 RSI: 41.9648 stochRSI: 97.89999999999999 upper bond: 102749.09769 lower bond: 102484.41731candle price: 102593.58 RSI: 38.3274 stochRSI: 93.45 upper bond: 102699.60284 lower bond: 102498.94916candle price: 102582.79 RSI: 36.1144 stochRSI: 81.47 upper bond: 102653.16528 lower bond: 102516.24972candle price: 102591.77 RSI: 39.7316 stochRSI: 79.66 upper bond: 102630.36301 lower bond: 102526.10499candle price: 102521.91 RSI: 26.7607 stochRSI: 11.52 upper bond: 102631.11487 lower bond: 102509.94713candle price: 102569.26 RSI: 42.9764 stochRSI: 83.41 upper bond: 102628.99039 lower bond: 102519.75361end time: 2025-01-20 22:09:59
+we hit the time limit
+we come out of time frame:1s
+================================================================end time: 2025-01-20 22:09:59
+we hit the time limit
+we come out of time frame:1m
+================================================================candle price: 102555.24 RSI: 37.1198 stochRSI: 14.84 upper bond: 104708.53791 lower bond: 102390.77209we are checking for signal from time: 2025-01-20 22:10:00till time: 2025-01-20 22:14:59
+##########################################
+PARTIAL
+we are in timeframe: 1m
+we are checking for signal from time: 2025-01-20 22:10:00till time: 2025-01-20 22:14:59
+===============================================
+we are in timeframe: 1m
+previous candle time: 2025-01-20 22:09:00
+current candle time: 2025-01-20 22:10:00
+start time: 2025-01-20 22:10:00
+end time: 2025-01-20 22:14:59
+candle price: 102716.44 RSI: 48.127 stochRSI: 87.31 upper bond: 103439.08505 lower bond: 101926.06695we are checking for signal from time: 2025-01-20 22:11:00till time: 2025-01-20 22:11:59
+##########################################
+PARTIAL
+we are in timeframe: 1s
+we are checking for signal from time: 2025-01-20 22:11:00till time: 2025-01-20 22:11:59
+===============================================
+we are in timeframe: 1s
+previous candle time: 2025-01-20 22:11:00
+current candle time: 2025-01-20 22:11:01
+start time: 2025-01-20 22:11:00
+end time: 2025-01-20 22:11:59
+candle price: 102639.35 RSI: 40.9086 stochRSI: 1.0999999999999999 upper bond: 102758.52895 lower bond: 102620.31805candle price: 102611.38 RSI: 36.4609 stochRSI: 4.2 upper bond: 102763.72938 lower bond: 102607.89662candle price: 102643.26 RSI: 45.8558 stochRSI: 22.02 upper bond: 102767.91612 lower bond: 102594.40488candle price: 102610.04 RSI: 40.0059 stochRSI: 17.5 upper bond: 102764.51301 lower bond: 102574.50799candle price: 102608.0 RSI: 39.9047 stochRSI: 17.0 upper bond: 102740.57072 lower bond: 102571.04028candle price: 102584.0 RSI: 34.9463 stochRSI: 19.96 upper bond: 102724.85483 lower bond: 102556.46717candle price: 102563.62 RSI: 31.1636 stochRSI: 0.0 upper bond: 102702.0785 lower bond: 102549.6325candle price: 102569.58 RSI: 33.5368 stochRSI: 9.28 upper bond: 102665.48515 lower bond: 102556.69385candle price: 102596.32 RSI: 43.4726 stochRSI: 94.59 upper bond: 102649.06576 lower bond: 102558.27724candle price: 102572.79 RSI: 37.34 stochRSI: 66.77 upper bond: 102642.03892 lower bond: 102554.06108candle price: 102602.06 RSI: 49.1223 stochRSI: 77.75999999999999 upper bond: 102626.95031 lower bond: 102555.71369candle price: 102532.01 RSI: 32.3552 stochRSI: 62.8 upper bond: 102625.01098 lower bond: 102546.21802candle price: 102476.78 RSI: 24.8693 stochRSI: 2.21 upper bond: 102641.19289 lower bond: 102505.19811candle price: 102447.61 RSI: 21.7954 stochRSI: 0.0 upper bond: 102653.66842 lower bond: 102462.11958candle price: 102469.6 RSI: 29.7111 stochRSI: 20.79 upper bond: 102656.26149 lower bond: 102426.09951candle price: 102524.0 RSI: 46.2765 stochRSI: 56.910000000000004 upper bond: 102650.68579 lower bond: 102419.11821candle price: 102559.33 RSI: 54.2771 stochRSI: 94.6 upper bond: 102633.57296 lower bond: 102421.49304candle price: 102556.9 RSI: 53.584 stochRSI: 95.23 upper bond: 102629.20689 lower bond: 102422.23811candle price: 102535.08 RSI: 47.6312 stochRSI: 86.31 upper bond: 102611.79541 lower bond: 102427.49659candle price: 102505.69 RSI: 40.5873 stochRSI: 52.68000000000001 upper bond: 102586.24161 lower bond: 102434.32139candle price: 102504.01 RSI: 40.1876 stochRSI: 7.26 upper bond: 102584.25851 lower bond: 102444.52849candle price: 102491.37 RSI: 36.5332 stochRSI: 0.02 upper bond: 102576.1609 lower bond: 102462.2021end time: 2025-01-20 22:11:59
+we hit the time limit
+we come out of time frame:1s
+================================================================candle price: 102496.69 RSI: 43.3851 stochRSI: 78.36 upper bond: 103367.74908 lower bond: 101926.44792we are checking for signal from time: 2025-01-20 22:12:00till time: 2025-01-20 22:12:59
+candle price: 102422.55 RSI: 41.8856 stochRSI: 76.34 upper bond: 103302.5403 lower bond: 101920.7117we are checking for signal from time: 2025-01-20 22:13:00till time: 2025-01-20 22:13:59
+candle price: 102539.99 RSI: 45.1212 stochRSI: 73.4 upper bond: 103241.76524 lower bond: 101927.57476we are checking for signal from time: 2025-01-20 22:14:00till time: 2025-01-20 22:14:59
+end time: 2025-01-20 22:14:59
+we hit the time limit
+we come out of time frame:1m
+================================================================candle price: 102583.26 RSI: 37.6372 stochRSI: 30.85 upper bond: 104651.60661 lower bond: 102281.25939we are checking for signal from time: 2025-01-20 22:15:00till time: 2025-01-20 22:19:59
+candle price: 102945.59 RSI: 44.0485 stochRSI: 55.230000000000004 upper bond: 104591.50642 lower bond: 102234.89258we are checking for signal from time: 2025-01-20 22:20:00till time: 2025-01-20 22:24:59
+candle price: 102758.87 RSI: 41.6709 stochRSI: 61.660000000000004 upper bond: 104550.39713 lower bond: 102165.72787we are checking for signal from time: 2025-01-20 22:25:00till time: 2025-01-20 22:29:59
+candle price: 103099.99 RSI: 47.2705 stochRSI: 74.24 upper bond: 104464.12288 lower bond: 102157.12312we are checking for signal from time: 2025-01-20 22:30:00till time: 2025-01-20 22:34:59
+candle price: 103387.15 RSI: 51.4921 stochRSI: 83.2 upper bond: 104371.83569 lower bond: 102178.36731we are checking for signal from time: 2025-01-20 22:35:00till time: 2025-01-20 22:39:59
+candle price: 103295.15 RSI: 50.1079 stochRSI: 93.49 upper bond: 104341.00534 lower bond: 102173.99666we are checking for signal from time: 2025-01-20 22:40:00till time: 2025-01-20 22:44:59
+##########################################
+PARTIAL
+we are in timeframe: 1m
+we are checking for signal from time: 2025-01-20 22:40:00till time: 2025-01-20 22:44:59
+===============================================
+we are in timeframe: 1m
+previous candle time: 2025-01-20 22:39:00
+current candle time: 2025-01-20 22:40:00
+start time: 2025-01-20 22:40:00
+end time: 2025-01-20 22:44:59
+candle price: 103303.72 RSI: 57.5986 stochRSI: 55.08 upper bond: 103624.70824 lower bond: 102572.73476we are checking for signal from time: 2025-01-20 22:41:00till time: 2025-01-20 22:41:59
+candle price: 103438.13 RSI: 61.5263 stochRSI: 49.94 upper bond: 103650.66824 lower bond: 102618.20076we are checking for signal from time: 2025-01-20 22:42:00till time: 2025-01-20 22:42:59
+candle price: 103384.01 RSI: 59.1504 stochRSI: 55.169999999999995 upper bond: 103659.28797 lower bond: 102674.78203we are checking for signal from time: 2025-01-20 22:43:00till time: 2025-01-20 22:43:59
+candle price: 103391.6 RSI: 59.3873 stochRSI: 60.33 upper bond: 103628.19783 lower bond: 102787.03217we are checking for signal from time: 2025-01-20 22:44:00till time: 2025-01-20 22:44:59
+end time: 2025-01-20 22:44:59
+we hit the time limit
+we come out of time frame:1m
+================================================================candle price: 103400.0 RSI: 51.7014 stochRSI: 98.22999999999999 upper bond: 104266.86435 lower bond: 102192.11665we are checking for signal from time: 2025-01-20 22:45:00till time: 2025-01-20 22:49:59
+##########################################
+PARTIAL
+we are in timeframe: 1m
+we are checking for signal from time: 2025-01-20 22:45:00till time: 2025-01-20 22:49:59
+===============================================
+we are in timeframe: 1m
+previous candle time: 2025-01-20 22:44:00
+current candle time: 2025-01-20 22:45:00
+start time: 2025-01-20 22:45:00
+end time: 2025-01-20 22:49:59
+candle price: 103380.01 RSI: 58.6346 stochRSI: 34.9 upper bond: 103618.26527 lower bond: 102901.30273we are checking for signal from time: 2025-01-20 22:46:00till time: 2025-01-20 22:46:59
+candle price: 103421.61 RSI: 60.1774 stochRSI: 29.64 upper bond: 103618.08762 lower bond: 102948.92938we are checking for signal from time: 2025-01-20 22:47:00till time: 2025-01-20 22:47:59
+candle price: 103442.19 RSI: 60.9532 stochRSI: 35.55 upper bond: 103610.04198 lower bond: 103007.19502we are checking for signal from time: 2025-01-20 22:48:00till time: 2025-01-20 22:48:59
+candle price: 103431.15 RSI: 60.2748 stochRSI: 43.08 upper bond: 103585.38458 lower bond: 103081.46442we are checking for signal from time: 2025-01-20 22:49:00till time: 2025-01-20 22:49:59
+end time: 2025-01-20 22:49:59
+we hit the time limit
+we come out of time frame:1m
+================================================================candle price: 103417.93 RSI: 51.9838 stochRSI: 98.22999999999999 upper bond: 104204.97955 lower bond: 102207.98645we are checking for signal from time: 2025-01-20 22:50:00till time: 2025-01-20 22:54:59
+##########################################
+PARTIAL
+we are in timeframe: 1m
+we are checking for signal from time: 2025-01-20 22:50:00till time: 2025-01-20 22:54:59
+===============================================
+we are in timeframe: 1m
+previous candle time: 2025-01-20 22:49:00
+current candle time: 2025-01-20 22:50:00
+start time: 2025-01-20 22:50:00
+end time: 2025-01-20 22:54:59
+candle price: 103455.78 RSI: 61.1183 stochRSI: 46.22 upper bond: 103513.32085 lower bond: 103236.89915we are checking for signal from time: 2025-01-20 22:51:00till time: 2025-01-20 22:51:59
+candle price: 103529.53 RSI: 64.2539 stochRSI: 66.08000000000001 upper bond: 103525.37292 lower bond: 103255.67908we are checking for signal from time: 2025-01-20 22:52:00till time: 2025-01-20 22:52:59
+##########################################
+PARTIAL
+we are in timeframe: 1s
+we are checking for signal from time: 2025-01-20 22:52:00till time: 2025-01-20 22:52:59
+===============================================
+we are in timeframe: 1s
+previous candle time: 2025-01-20 22:52:00
+current candle time: 2025-01-20 22:52:01
+start time: 2025-01-20 22:52:00
+end time: 2025-01-20 22:52:59
+candle price: 103529.39 RSI: 73.5391 stochRSI: 97.52 upper bond: 103533.17026 lower bond: 103518.56574candle price: 103529.4 RSI: 73.5723 stochRSI: 93.62 upper bond: 103533.72237 lower bond: 103519.44963candle price: 103529.39 RSI: 73.4482 stochRSI: 32.07 upper bond: 103533.9525 lower bond: 103521.3745candle price: 103539.81 RSI: 91.2609 stochRSI: 66.67 upper bond: 103537.74505 lower bond: 103521.81795candle price: 103539.81 RSI: 91.1941 stochRSI: 99.86 upper bond: 103539.81341 lower bond: 103523.26859candle price: 103539.81 RSI: 91.1169 stochRSI: 99.31 upper bond: 103542.96035 lower bond: 103523.20565candle price: 103541.07 RSI: 92.2505 stochRSI: 99.72 upper bond: 103545.40214 lower bond: 103524.09786candle price: 103541.08 RSI: 92.1538 stochRSI: 99.61 upper bond: 103546.92881 lower bond: 103526.03519candle price: 103541.07 RSI: 92.009 stochRSI: 89.42 upper bond: 103547.24306 lower bond: 103528.05694candle price: 103550.68 RSI: 97.1055 stochRSI: 93.08 upper bond: 103549.77873 lower bond: 103530.87727candle price: 103550.68 RSI: 97.0337 stochRSI: 99.19 upper bond: 103550.59053 lower bond: 103534.32247candle price: 103559.99 RSI: 98.3749 stochRSI: 100.0 upper bond: 103559.96699 lower bond: 103530.99901candle price: 103574.84 RSI: 99.145 stochRSI: 100.0 upper bond: 103575.17181 lower bond: 103526.30119candle price: 103599.99 RSI: 99.5699 stochRSI: 99.82 upper bond: 103588.05383 lower bond: 103522.93917candle price: 103612.14 RSI: 99.6724 stochRSI: 100.0 upper bond: 103609.79567 lower bond: 103520.08733candle price: 103615.32 RSI: 99.6947 stochRSI: 100.0 upper bond: 103627.34168 lower bond: 103524.47432candle price: 103615.33 RSI: 99.6947 stochRSI: 100.0 upper bond: 103636.61024 lower bond: 103536.58976candle price: 103615.33 RSI: 99.6947 stochRSI: 100.0 upper bond: 103639.40918 lower bond: 103546.72182candle price: 103631.37 RSI: 99.8154 stochRSI: 100.0 upper bond: 103641.44799 lower bond: 103564.13601candle price: 103631.37 RSI: 99.7865 stochRSI: 86.52 upper bond: 103643.07799 lower bond: 103580.95001candle price: 103631.36 RSI: 79.9039 stochRSI: 59.93000000000001 upper bond: 103640.43952 lower bond: 103595.79048end time: 2025-01-20 22:52:59
+we hit the time limit
+we come out of time frame:1s
+================================================================candle price: 103625.99 RSI: 67.9003 stochRSI: 87.78 upper bond: 103560.49391 lower bond: 103260.15709we are checking for signal from time: 2025-01-20 22:53:00till time: 2025-01-20 22:53:59
+##########################################
+PARTIAL
+we are in timeframe: 1s
+we are checking for signal from time: 2025-01-20 22:53:00till time: 2025-01-20 22:53:59
+===============================================
+we are in timeframe: 1s
+previous candle time: 2025-01-20 22:53:00
+current candle time: 2025-01-20 22:53:01
+start time: 2025-01-20 22:53:00
+end time: 2025-01-20 22:53:59
+candle price: 103630.82 RSI: 66.7429 stochRSI: 8.05 upper bond: 103643.0922 lower bond: 103607.8418candle price: 103630.82 RSI: 66.7358 stochRSI: 0.01 upper bond: 103643.42792 lower bond: 103612.15308candle price: 103630.82 RSI: 66.7275 stochRSI: 0.02 upper bond: 103642.62398 lower bond: 103616.05402candle price: 103624.43 RSI: 54.9852 stochRSI: 0.01 upper bond: 103639.5377 lower bond: 103622.1933candle price: 103620.85 RSI: 48.3233 stochRSI: 7.64 upper bond: 103639.79442 lower bond: 103619.86258candle price: 103612.14 RSI: 37.8709 stochRSI: 0.0 upper bond: 103639.66023 lower bond: 103612.43577candle price: 103645.26 RSI: 70.5038 stochRSI: 66.67 upper bond: 103646.04261 lower bond: 103607.98539candle price: 103649.04 RSI: 72.5509 stochRSI: 99.99 upper bond: 103650.80595 lower bond: 103606.32305candle price: 103649.04 RSI: 72.5401 stochRSI: 99.98 upper bond: 103658.00748 lower bond: 103604.58952candle price: 103649.04 RSI: 72.5401 stochRSI: 99.95 upper bond: 103661.85937 lower bond: 103604.38263candle price: 103654.7 RSI: 76.3643 stochRSI: 99.98 upper bond: 103669.07367 lower bond: 103604.97233candle price: 103654.71 RSI: 76.3728 stochRSI: 99.78 upper bond: 103673.95019 lower bond: 103608.81281candle price: 103654.71 RSI: 76.3728 stochRSI: 99.72999999999999 upper bond: 103673.80443 lower bond: 103616.60157candle price: 103641.73 RSI: 47.5126 stochRSI: 0.0 upper bond: 103658.48223 lower bond: 103641.58277candle price: 103635.79 RSI: 38.3483 stochRSI: 0.0 upper bond: 103660.30399 lower bond: 103638.10901candle price: 103645.24 RSI: 53.6599 stochRSI: 40.29 upper bond: 103660.0934 lower bond: 103637.1806candle price: 103613.71 RSI: 24.2361 stochRSI: 0.01 upper bond: 103665.15557 lower bond: 103619.85943candle price: 103611.49 RSI: 23.1458 stochRSI: 0.03 upper bond: 103664.88572 lower bond: 103607.16728candle price: 103560.4 RSI: 9.2123 stochRSI: 0.06999999999999999 upper bond: 103667.9933 lower bond: 103585.9867candle price: 103561.84 RSI: 19.8929 stochRSI: 11.89 upper bond: 103676.1391 lower bond: 103550.9949end time: 2025-01-20 22:53:59
+we hit the time limit
+we come out of time frame:1s
+================================================================candle price: 103591.5 RSI: 65.334 stochRSI: 91.7 upper bond: 103589.4553 lower bond: 103254.3247we are checking for signal from time: 2025-01-20 22:54:00till time: 2025-01-20 22:54:59
+##########################################
+PARTIAL
+we are in timeframe: 1s
+we are checking for signal from time: 2025-01-20 22:54:00till time: 2025-01-20 22:54:59
+===============================================
+we are in timeframe: 1s
+previous candle time: 2025-01-20 22:54:00
+current candle time: 2025-01-20 22:54:01
+start time: 2025-01-20 22:54:00
+end time: 2025-01-20 22:54:59
+candle price: 103607.09 RSI: 51.0366 stochRSI: 100.0 upper bond: 103656.60702 lower bond: 103545.27198candle price: 103608.0 RSI: 51.5175 stochRSI: 100.0 upper bond: 103647.08645 lower bond: 103548.28455candle price: 103608.0 RSI: 51.5175 stochRSI: 100.0 upper bond: 103638.18322 lower bond: 103551.14778candle price: 103608.0 RSI: 51.5176 stochRSI: 99.99 upper bond: 103636.60907 lower bond: 103551.45093candle price: 103618.98 RSI: 61.3374 stochRSI: 100.0 upper bond: 103637.67826 lower bond: 103555.96374candle price: 103619.51 RSI: 61.8281 stochRSI: 100.0 upper bond: 103629.3738 lower bond: 103583.5602candle price: 103624.98 RSI: 66.8631 stochRSI: 100.0 upper bond: 103625.77339 lower bond: 103596.03761candle price: 103635.15 RSI: 73.7862 stochRSI: 100.0 upper bond: 103635.45577 lower bond: 103596.75423candle price: 103635.15 RSI: 73.7745 stochRSI: 99.95 upper bond: 103640.35293 lower bond: 103597.28707candle price: 103635.15 RSI: 73.7745 stochRSI: 99.94 upper bond: 103642.22779 lower bond: 103598.12721candle price: 103635.15 RSI: 73.7745 stochRSI: 99.94 upper bond: 103643.76158 lower bond: 103599.30842candle price: 103635.14 RSI: 73.7491 stochRSI: 99.78 upper bond: 103645.82022 lower bond: 103602.67778candle price: 103639.21 RSI: 77.6416 stochRSI: 99.83999999999999 upper bond: 103647.16449 lower bond: 103610.29151candle price: 103639.22 RSI: 77.6267 stochRSI: 99.07000000000001 upper bond: 103647.00177 lower bond: 103617.94823candle price: 103639.22 RSI: 77.5983 stochRSI: 98.25 upper bond: 103646.32956 lower bond: 103622.66744candle price: 103639.21 RSI: 77.5508 stochRSI: 96.89999999999999 upper bond: 103641.24801 lower bond: 103633.11199candle price: 103639.22 RSI: 77.5693 stochRSI: 97.06 upper bond: 103641.57347 lower bond: 103633.59953candle price: 103639.22 RSI: 77.5183 stochRSI: 37.4 upper bond: 103641.72231 lower bond: 103634.67169candle price: 103639.22 RSI: 77.4595 stochRSI: 9.24 upper bond: 103641.25252 lower bond: 103636.36248candle price: 103639.21 RSI: 77.3446 stochRSI: 5.41 upper bond: 103639.22445 lower bond: 103639.20455end time: 2025-01-20 22:54:59
+we hit the time limit
+we come out of time frame:1s
+================================================================end time: 2025-01-20 22:54:59
+we hit the time limit
+we come out of time frame:1m
+================================================================candle price: 103639.22 RSI: 55.4465 stochRSI: 100.0 upper bond: 104170.28304 lower bond: 102221.09296we are checking for signal from time: 2025-01-20 22:55:00till time: 2025-01-20 22:59:59
+##########################################
+PARTIAL
+we are in timeframe: 1m
+we are checking for signal from time: 2025-01-20 22:55:00till time: 2025-01-20 22:59:59
+===============================================
+we are in timeframe: 1m
+previous candle time: 2025-01-20 22:54:00
+current candle time: 2025-01-20 22:55:00
+start time: 2025-01-20 22:55:00
+end time: 2025-01-20 22:59:59
+candle price: 103687.18 RSI: 68.9725 stochRSI: 89.11 upper bond: 103668.6649 lower bond: 103228.1631we are checking for signal from time: 2025-01-20 22:56:00till time: 2025-01-20 22:56:59
+##########################################
+PARTIAL
+we are in timeframe: 1s
+we are checking for signal from time: 2025-01-20 22:56:00till time: 2025-01-20 22:56:59
+===============================================
+we are in timeframe: 1s
+previous candle time: 2025-01-20 22:56:00
+current candle time: 2025-01-20 22:56:01
+start time: 2025-01-20 22:56:00
+end time: 2025-01-20 22:56:59
+candle price: 103669.3 RSI: 11.1879 stochRSI: 0.0 upper bond: 103746.93784 lower bond: 103677.38116candle price: 103660.52 RSI: 9.3752 stochRSI: 0.0 upper bond: 103750.33503 lower bond: 103662.42397candle price: 103660.53 RSI: 9.3945 stochRSI: 0.02 upper bond: 103748.87288 lower bond: 103645.23012candle price: 103660.52 RSI: 9.392 stochRSI: 0.04 upper bond: 103743.75678 lower bond: 103637.90822candle price: 103660.53 RSI: 9.4181 stochRSI: 0.44999999999999996 upper bond: 103724.26363 lower bond: 103632.52837candle price: 103660.52 RSI: 9.4145 stochRSI: 1.47 upper bond: 103708.11063 lower bond: 103636.24237candle price: 103660.52 RSI: 9.4533 stochRSI: 65.42 upper bond: 103682.40333 lower bond: 103647.24667candle price: 103660.52 RSI: 9.4982 stochRSI: 96.6 upper bond: 103666.66751 lower bond: 103656.13749candle price: 103660.53 RSI: 9.5662 stochRSI: 96.6 upper bond: 103660.535 lower bond: 103660.515candle price: 103660.53 RSI: 9.6426 stochRSI: 98.18 upper bond: 103660.53545 lower bond: 103660.51555candle price: 103679.4 RSI: 69.0167 stochRSI: 100.0 upper bond: 103676.37432 lower bond: 103650.17368candle price: 103695.99 RSI: 82.1337 stochRSI: 100.0 upper bond: 103693.70448 lower bond: 103642.95652candle price: 103696.0 RSI: 82.1392 stochRSI: 100.0 upper bond: 103697.89264 lower bond: 103642.31536candle price: 103704.0 RSI: 85.914 stochRSI: 100.0 upper bond: 103703.33795 lower bond: 103641.21805candle price: 103724.07 RSI: 91.1513 stochRSI: 100.0 upper bond: 103718.95729 lower bond: 103637.35471candle price: 103742.32 RSI: 93.6421 stochRSI: 100.0 upper bond: 103738.29557 lower bond: 103633.53043candle price: 103742.31 RSI: 93.6246 stochRSI: 99.95 upper bond: 103758.7099 lower bond: 103637.6531candle price: 103737.51 RSI: 84.2186 stochRSI: 78.2 upper bond: 103765.64662 lower bond: 103646.59438candle price: 103728.01 RSI: 69.3817 stochRSI: 0.01 upper bond: 103762.86506 lower bond: 103669.61994candle price: 103728.01 RSI: 69.3817 stochRSI: 0.03 upper bond: 103758.25696 lower bond: 103688.97604candle price: 103728.02 RSI: 69.3919 stochRSI: 0.04 upper bond: 103752.91969 lower bond: 103704.44531end time: 2025-01-20 22:56:59
+we hit the time limit
+we come out of time frame:1s
+================================================================candle price: 103739.99 RSI: 70.8577 stochRSI: 97.42 upper bond: 103711.66437 lower bond: 103231.17163we are checking for signal from time: 2025-01-20 22:57:00till time: 2025-01-20 22:57:59
+##########################################
+PARTIAL
+we are in timeframe: 1s
+we are checking for signal from time: 2025-01-20 22:57:00till time: 2025-01-20 22:57:59
+===============================================
+we are in timeframe: 1s
+previous candle time: 2025-01-20 22:57:01
+current candle time: 2025-01-20 22:57:02
+start time: 2025-01-20 22:57:00
+end time: 2025-01-20 22:57:59
+candle price: 103750.0 RSI: 83.443 stochRSI: 85.11 upper bond: 103752.90223 lower bond: 103719.66577candle price: 103750.0 RSI: 83.443 stochRSI: 100.0 upper bond: 103756.46001 lower bond: 103718.41299candle price: 103778.48 RSI: 92.1017 stochRSI: 100.0 upper bond: 103775.60605 lower bond: 103709.51395candle price: 103790.29 RSI: 93.7293 stochRSI: 99.95 upper bond: 103796.42807 lower bond: 103707.37593candle price: 103790.29 RSI: 93.7293 stochRSI: 99.88 upper bond: 103804.91187 lower bond: 103711.34813candle price: 103800.01 RSI: 86.4384 stochRSI: 74.92 upper bond: 103814.56123 lower bond: 103716.62377candle price: 103790.29 RSI: 72.2248 stochRSI: 0.0 upper bond: 103816.32808 lower bond: 103733.43392candle price: 103764.01 RSI: 45.9994 stochRSI: 0.0 upper bond: 103813.31644 lower bond: 103744.04856candle price: 103796.12 RSI: 65.157 stochRSI: 22.62 upper bond: 103810.45309 lower bond: 103755.92391candle price: 103810.2 RSI: 70.552 stochRSI: 44.68 upper bond: 103812.4316 lower bond: 103762.5244candle price: 103815.97 RSI: 72.5346 stochRSI: 68.17999999999999 upper bond: 103822.74408 lower bond: 103762.47292candle price: 103806.75 RSI: 63.6189 stochRSI: 77.78 upper bond: 103828.24525 lower bond: 103762.95775candle price: 103780.0 RSI: 43.623 stochRSI: 32.09 upper bond: 103828.14881 lower bond: 103761.55819candle price: 103778.01 RSI: 42.5143 stochRSI: 0.0 upper bond: 103828.15723 lower bond: 103758.54977candle price: 103778.01 RSI: 42.5143 stochRSI: 0.0 upper bond: 103827.91411 lower bond: 103757.96589candle price: 103778.0 RSI: 42.5052 stochRSI: 0.0 upper bond: 103825.34425 lower bond: 103763.13675candle price: 103778.0 RSI: 42.507 stochRSI: 0.04 upper bond: 103822.62559 lower bond: 103758.76041candle price: 103772.0 RSI: 35.8367 stochRSI: 0.06 upper bond: 103815.7035 lower bond: 103757.8355candle price: 103763.88 RSI: 29.1499 stochRSI: 0.0 upper bond: 103801.70105 lower bond: 103757.03395candle price: 103752.99 RSI: 22.2219 stochRSI: 0.0 upper bond: 103793.06379 lower bond: 103754.93521candle price: 103769.37 RSI: 45.0165 stochRSI: 100.0 upper bond: 103788.13277 lower bond: 103755.47623end time: 2025-01-20 22:57:59
+we hit the time limit
+we come out of time frame:1s
+================================================================candle price: 103769.36 RSI: 71.881 stochRSI: 100.0 upper bond: 103760.39455 lower bond: 103217.82345we are checking for signal from time: 2025-01-20 22:58:00till time: 2025-01-20 22:58:59
+##########################################
+PARTIAL
+we are in timeframe: 1s
+we are checking for signal from time: 2025-01-20 22:58:00till time: 2025-01-20 22:58:59
+===============================================
+we are in timeframe: 1s
+previous candle time: 2025-01-20 22:58:01
+current candle time: 2025-01-20 22:58:02
+start time: 2025-01-20 22:58:00
+end time: 2025-01-20 22:58:59
+candle price: 103768.01 RSI: 43.3144 stochRSI: 93.34 upper bond: 103784.16278 lower bond: 103754.71722candle price: 103768.01 RSI: 43.3199 stochRSI: 93.33 upper bond: 103782.01351 lower bond: 103754.86649candle price: 103748.26 RSI: 25.0623 stochRSI: 17.169999999999998 upper bond: 103780.68196 lower bond: 103747.62204candle price: 103757.03 RSI: 39.9649 stochRSI: 29.759999999999998 upper bond: 103778.1385 lower bond: 103745.6935candle price: 103755.0 RSI: 37.8717 stochRSI: 70.07 upper bond: 103777.34444 lower bond: 103744.10156candle price: 103754.01 RSI: 36.8116 stochRSI: 64.73 upper bond: 103776.25958 lower bond: 103743.87342candle price: 103725.66 RSI: 17.1064 stochRSI: 42.88 upper bond: 103776.50207 lower bond: 103736.18693candle price: 103728.0 RSI: 28.3726 stochRSI: 17.97 upper bond: 103778.54329 lower bond: 103725.00871candle price: 103736.0 RSI: 39.138 stochRSI: 65.67 upper bond: 103773.16517 lower bond: 103718.78583candle price: 103736.01 RSI: 39.1486 stochRSI: 98.89 upper bond: 103769.31793 lower bond: 103718.03407candle price: 103736.0 RSI: 39.1394 stochRSI: 99.99 upper bond: 103767.47207 lower bond: 103716.02993candle price: 103736.0 RSI: 39.1441 stochRSI: 99.97 upper bond: 103763.3893 lower bond: 103715.9067candle price: 103702.13 RSI: 14.8679 stochRSI: 0.0 upper bond: 103751.48103 lower bond: 103704.86197candle price: 103702.13 RSI: 14.8679 stochRSI: 0.0 upper bond: 103752.99837 lower bond: 103697.57063candle price: 103674.14 RSI: 11.3289 stochRSI: 3.63 upper bond: 103760.35405 lower bond: 103671.31395candle price: 103660.54 RSI: 8.7718 stochRSI: 8.09 upper bond: 103755.23228 lower bond: 103648.83472candle price: 103642.38 RSI: 6.2307 stochRSI: 5.390000000000001 upper bond: 103744.02925 lower bond: 103635.57675candle price: 103639.22 RSI: 5.8832 stochRSI: 0.0 upper bond: 103728.76317 lower bond: 103624.16083end time: 2025-01-20 22:58:59
+we hit the time limit
+we come out of time frame:1s
+================================================================candle price: 103647.73 RSI: 62.1485 stochRSI: 75.51 upper bond: 103778.28037 lower bond: 103220.89763we are checking for signal from time: 2025-01-20 22:59:00till time: 2025-01-20 22:59:59
+end time: 2025-01-20 22:59:59
+we hit the time limit
+we come out of time frame:1m
+================================================================candle price: 103608.0 RSI: 54.8455 stochRSI: 99.33 upper bond: 104126.4118 lower bond: 102238.3842we are checking for signal from time: 2025-01-20 23:00:00till time: 2025-01-20 23:04:59
+##########################################
+PARTIAL
+we are in timeframe: 1m
+we are checking for signal from time: 2025-01-20 23:00:00till time: 2025-01-20 23:04:59
+===============================================
+we are in timeframe: 1m
+previous candle time: 2025-01-20 22:59:00
+current candle time: 2025-01-20 23:00:00
+start time: 2025-01-20 23:00:00
+end time: 2025-01-20 23:04:59
+candle price: 103365.1 RSI: 45.6564 stochRSI: 8.84 upper bond: 103775.60276 lower bond: 103260.99824we are checking for signal from time: 2025-01-20 23:01:00till time: 2025-01-20 23:01:59
+##########################################
+PARTIAL
+we are in timeframe: 1s
+we are checking for signal from time: 2025-01-20 23:01:00till time: 2025-01-20 23:01:59
+===============================================
+we are in timeframe: 1s
+previous candle time: 2025-01-20 23:00:59
+current candle time: 2025-01-20 23:01:00
+start time: 2025-01-20 23:01:00
+end time: 2025-01-20 23:01:59
+candle price: 103365.11 RSI: 26.2823 stochRSI: 100.0 upper bond: 103554.36126 lower bond: 103297.39674candle price: 103321.78 RSI: 20.016 stochRSI: 81.52000000000001 upper bond: 103518.98585 lower bond: 103280.64115candle price: 103308.34 RSI: 18.3633 stochRSI: 69.06 upper bond: 103486.51665 lower bond: 103274.65335candle price: 103280.0 RSI: 15.1369 stochRSI: 57.37 upper bond: 103451.02952 lower bond: 103259.77848candle price: 103240.15 RSI: 16.5687 stochRSI: 45.35 upper bond: 103426.67785 lower bond: 103248.28015candle price: 103200.0 RSI: 13.5047 stochRSI: 0.0 upper bond: 103413.97 lower bond: 103201.928candle price: 103187.47 RSI: 18.4448 stochRSI: 40.94 upper bond: 103413.15379 lower bond: 103153.10121candle price: 103187.48 RSI: 18.4496 stochRSI: 61.79 upper bond: 103399.03191 lower bond: 103134.29809candle price: 103198.0 RSI: 28.6019 stochRSI: 93.95 upper bond: 103355.09515 lower bond: 103133.57885candle price: 103175.99 RSI: 28.4188 stochRSI: 72.59 upper bond: 103316.10149 lower bond: 103125.72651candle price: 103182.0 RSI: 30.7784 stochRSI: 88.56 upper bond: 103285.54956 lower bond: 103131.01044candle price: 103211.6 RSI: 42.4486 stochRSI: 94.91000000000001 upper bond: 103256.71127 lower bond: 103141.83973candle price: 103231.33 RSI: 48.9852 stochRSI: 100.0 upper bond: 103235.1122 lower bond: 103156.4838candle price: 103207.53 RSI: 42.8836 stochRSI: 74.05000000000001 upper bond: 103236.04261 lower bond: 103159.56239candle price: 103225.99 RSI: 49.1984 stochRSI: 90.41 upper bond: 103241.97968 lower bond: 103160.93032candle price: 103248.0 RSI: 56.7423 stochRSI: 100.0 upper bond: 103252.65339 lower bond: 103161.36161candle price: 103290.19 RSI: 67.0359 stochRSI: 100.0 upper bond: 103289.65853 lower bond: 103152.22747candle price: 103300.65 RSI: 68.8847 stochRSI: 99.27 upper bond: 103309.90533 lower bond: 103157.22867candle price: 103268.01 RSI: 55.5609 stochRSI: 50.870000000000005 upper bond: 103311.87295 lower bond: 103181.06205candle price: 103294.0 RSI: 63.0786 stochRSI: 53.44 upper bond: 103318.75761 lower bond: 103188.21039candle price: 103325.99 RSI: 70.1361 stochRSI: 96.71 upper bond: 103343.44312 lower bond: 103191.94588candle price: 103335.89 RSI: 72.3375 stochRSI: 100.0 upper bond: 103354.99204 lower bond: 103216.77396end time: 2025-01-20 23:01:59
+we hit the time limit
+we come out of time frame:1s
+================================================================candle price: 103335.89 RSI: 44.3337 stochRSI: 0.0 upper bond: 103780.5257 lower bond: 103245.8513we are checking for signal from time: 2025-01-20 23:02:00till time: 2025-01-20 23:02:59
+##########################################
+PARTIAL
+we are in timeframe: 1s
+we are checking for signal from time: 2025-01-20 23:02:00till time: 2025-01-20 23:02:59
+===============================================
+we are in timeframe: 1s
+previous candle time: 2025-01-20 23:02:01
+current candle time: 2025-01-20 23:02:02
+start time: 2025-01-20 23:02:00
+end time: 2025-01-20 23:02:59
+candle price: 103377.73 RSI: 81.1629 stochRSI: 100.0 upper bond: 103376.95364 lower bond: 103250.80936candle price: 103378.02 RSI: 81.2098 stochRSI: 100.0 upper bond: 103394.01234 lower bond: 103251.31666candle price: 103362.0 RSI: 67.0577 stochRSI: 14.37 upper bond: 103401.61838 lower bond: 103264.44862candle price: 103424.0 RSI: 79.6665 stochRSI: 60.4 upper bond: 103410.73398 lower bond: 103292.83802candle price: 103372.25 RSI: 58.3382 stochRSI: 30.330000000000002 upper bond: 103410.11672 lower bond: 103308.43528candle price: 103435.91 RSI: 70.1903 stochRSI: 40.1 upper bond: 103432.18211 lower bond: 103314.37989candle price: 103471.1 RSI: 72.5342 stochRSI: 46.949999999999996 upper bond: 103464.10342 lower bond: 103327.32358candle price: 103490.06 RSI: 69.2349 stochRSI: 71.89 upper bond: 103508.4957 lower bond: 103322.3093candle price: 103526.13 RSI: 73.9119 stochRSI: 67.36999999999999 upper bond: 103542.57718 lower bond: 103329.32382candle price: 103550.0 RSI: 76.5998 stochRSI: 85.32 upper bond: 103566.73241 lower bond: 103343.44459candle price: 103530.45 RSI: 69.2459 stochRSI: 50.22 upper bond: 103587.83101 lower bond: 103365.31199candle price: 103500.1 RSI: 58.4569 stochRSI: 0.0 upper bond: 103576.97967 lower bond: 103413.94533candle price: 103471.11 RSI: 49.7065 stochRSI: 0.0 upper bond: 103570.71149 lower bond: 103429.54951candle price: 103451.43 RSI: 44.1997 stochRSI: 0.0 upper bond: 103563.75555 lower bond: 103442.77745candle price: 103485.59 RSI: 54.1438 stochRSI: 26.38 upper bond: 103564.74554 lower bond: 103437.38346candle price: 103474.0 RSI: 50.7599 stochRSI: 33.239999999999995 upper bond: 103564.35106 lower bond: 103433.83794candle price: 103492.02 RSI: 55.2791 stochRSI: 67.99 upper bond: 103554.2036 lower bond: 103434.4514candle price: 103494.0 RSI: 55.5303 stochRSI: 90.55 upper bond: 103538.32879 lower bond: 103440.22621candle price: 103494.0 RSI: 55.5289 stochRSI: 91.5 upper bond: 103518.15179 lower bond: 103449.20221candle price: 103494.01 RSI: 55.5331 stochRSI: 83.63000000000001 upper bond: 103515.21026 lower bond: 103450.89874candle price: 103484.04 RSI: 49.5908 stochRSI: 53.14 upper bond: 103516.28263 lower bond: 103453.41037end time: 2025-01-20 23:02:59
+we hit the time limit
+we come out of time frame:1s
+================================================================candle price: 103462.52 RSI: 50.9658 stochRSI: 8.03 upper bond: 103778.99867 lower bond: 103255.22933we are checking for signal from time: 2025-01-20 23:03:00till time: 2025-01-20 23:03:59
+##########################################
+PARTIAL
+we are in timeframe: 1s
+we are checking for signal from time: 2025-01-20 23:03:00till time: 2025-01-20 23:03:59
+===============================================
+we are in timeframe: 1s
+previous candle time: 2025-01-20 23:03:01
+current candle time: 2025-01-20 23:03:02
+start time: 2025-01-20 23:03:00
+end time: 2025-01-20 23:03:59
+candle price: 103499.91 RSI: 58.3753 stochRSI: 58.08 upper bond: 103509.69267 lower bond: 103464.26433candle price: 103491.92 RSI: 53.6019 stochRSI: 89.75999999999999 upper bond: 103511.79347 lower bond: 103466.44653candle price: 103466.66 RSI: 43.0958 stochRSI: 66.67 upper bond: 103515.64131 lower bond: 103462.30169candle price: 103444.74 RSI: 36.661 stochRSI: 6.01 upper bond: 103519.0576 lower bond: 103446.6384candle price: 103418.33 RSI: 30.2359 stochRSI: 0.0 upper bond: 103526.5388 lower bond: 103417.9042candle price: 103418.34 RSI: 30.2418 stochRSI: 0.01 upper bond: 103525.4233 lower bond: 103403.8847candle price: 103362.02 RSI: 19.1199 stochRSI: 0.0 upper bond: 103530.62807 lower bond: 103371.62993candle price: 103389.04 RSI: 35.4728 stochRSI: 40.57 upper bond: 103531.60667 lower bond: 103341.78033candle price: 103406.62 RSI: 43.6119 stochRSI: 96.6 upper bond: 103503.46508 lower bond: 103340.11492candle price: 103391.8 RSI: 39.424 stochRSI: 94.57 upper bond: 103471.67497 lower bond: 103350.70603candle price: 103341.18 RSI: 28.925 stochRSI: 46.92 upper bond: 103452.37016 lower bond: 103335.66784candle price: 103313.0 RSI: 24.412 stochRSI: 32.97 upper bond: 103447.78661 lower bond: 103316.04639candle price: 103325.71 RSI: 30.7991 stochRSI: 19.52 upper bond: 103438.55284 lower bond: 103294.95116candle price: 103325.71 RSI: 30.7991 stochRSI: 33.269999999999996 upper bond: 103420.26034 lower bond: 103288.16966candle price: 103320.57 RSI: 34.9561 stochRSI: 41.93 upper bond: 103417.51117 lower bond: 103275.37783candle price: 103352.0 RSI: 48.2182 stochRSI: 100.0 upper bond: 103400.00356 lower bond: 103280.40244candle price: 103352.0 RSI: 48.2188 stochRSI: 99.99 upper bond: 103376.54821 lower bond: 103292.93279candle price: 103364.0 RSI: 53.4573 stochRSI: 99.99 upper bond: 103373.64518 lower bond: 103295.84682candle price: 103354.2 RSI: 48.4577 stochRSI: 88.01 upper bond: 103377.06038 lower bond: 103296.90262candle price: 103354.21 RSI: 48.4634 stochRSI: 79.03 upper bond: 103379.02961 lower bond: 103307.29739candle price: 103380.0 RSI: 62.1261 stochRSI: 100.0 upper bond: 103391.22538 lower bond: 103310.98762end time: 2025-01-20 23:03:59
+we hit the time limit
+we come out of time frame:1s
+================================================================candle price: 103402.0 RSI: 48.0211 stochRSI: 12.49 upper bond: 103778.55927 lower bond: 103256.70873we are checking for signal from time: 2025-01-20 23:04:00till time: 2025-01-20 23:04:59
+##########################################
+PARTIAL
+we are in timeframe: 1s
+we are checking for signal from time: 2025-01-20 23:04:00till time: 2025-01-20 23:04:59
+===============================================
+we are in timeframe: 1s
+previous candle time: 2025-01-20 23:04:00
+current candle time: 2025-01-20 23:04:01
+start time: 2025-01-20 23:04:00
+end time: 2025-01-20 23:04:59
+candle price: 103422.15 RSI: 76.6258 stochRSI: 100.0 upper bond: 103413.17812 lower bond: 103325.18088candle price: 103389.08 RSI: 55.7282 stochRSI: 65.96 upper bond: 103420.53794 lower bond: 103327.57606candle price: 103402.2 RSI: 60.7642 stochRSI: 37.330000000000005 upper bond: 103426.11333 lower bond: 103335.74967candle price: 103410.0 RSI: 64.0333 stochRSI: 35.709999999999994 upper bond: 103432.54169 lower bond: 103341.56131candle price: 103419.39 RSI: 67.8254 stochRSI: 50.83 upper bond: 103436.04038 lower bond: 103356.53962candle price: 103439.95 RSI: 74.5515 stochRSI: 65.08 upper bond: 103439.73914 lower bond: 103361.41486candle price: 103457.94 RSI: 79.0052 stochRSI: 93.39 upper bond: 103449.82596 lower bond: 103368.09804candle price: 103493.31 RSI: 85.0342 stochRSI: 100.0 upper bond: 103482.10058 lower bond: 103365.94742candle price: 103486.4 RSI: 79.8853 stochRSI: 85.86 upper bond: 103499.37888 lower bond: 103363.63712candle price: 103479.99 RSI: 73.5661 stochRSI: 43.45 upper bond: 103512.64598 lower bond: 103371.36502candle price: 103479.99 RSI: 73.5661 stochRSI: 27.43 upper bond: 103518.00248 lower bond: 103390.65752candle price: 103479.51 RSI: 73.0791 stochRSI: 5.35 upper bond: 103516.66434 lower bond: 103407.45866candle price: 103486.4 RSI: 75.7518 stochRSI: 25.47 upper bond: 103510.28559 lower bond: 103435.95641candle price: 103471.11 RSI: 58.4389 stochRSI: 22.919999999999998 upper bond: 103500.90711 lower bond: 103455.15089candle price: 103483.21 RSI: 64.5309 stochRSI: 16.13 upper bond: 103494.03582 lower bond: 103466.52218candle price: 103476.39 RSI: 58.2204 stochRSI: 29.54 upper bond: 103491.52838 lower bond: 103467.16062
